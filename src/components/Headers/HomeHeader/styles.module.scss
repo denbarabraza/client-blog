@@ -1,0 +1,123 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  margin-bottom: $margin-xs;
+  width: $width-xxl;
+  padding: $padding-s 0;
+  color: $white-color;
+}
+
+.header {
+  margin: 0 auto;
+  padding-left: $padding-s;
+
+  @media (max-width: $tablet) {
+    padding-left: 0;
+    width: fit-content;
+    text-align: center;
+  }
+}
+
+.label {
+  margin-bottom: $margin-xxxs;
+  font-size: $fontSize-xxs;
+  font-weight: $fontWeight-xs;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  a {
+    margin-left: 5px;
+    color: $white-color;
+    font-weight: $fontWeight-l;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: $margin-xs;
+    font-size: $fontSize-xxxxs;
+    line-height: 14px;
+  }
+}
+
+.title {
+  margin-bottom: $margin-xxxs;
+  display: block;
+  width: $width-ml;
+  font-size: $fontSize-ll;
+  font-weight: $fontWeight-m;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: $white-color;
+  transition: all 0.8s;
+  cursor: pointer;
+
+  &:hover {
+    color: $yellow-color;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-m;
+    font-weight: $fontWeight-s;
+    line-height: 44px;
+    width: fit-content;
+  }
+}
+
+.preview {
+  margin-bottom: $margin-xxxs;
+  width: $width-l;
+  font-size: $fontSize-xxs;
+  line-height: 28px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: $margin-xs;
+    font-size: $fontSize-xxxxs;
+    line-height: 14px;
+    width: fit-content;
+  }
+}
+
+.info {
+  margin-bottom: $margin-xxxs;
+  font-size: $fontSize-xxxs;
+  font-weight: $fontWeight-xs;
+  color: $white-color;
+
+  a {
+    color: $yellow-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $purple-color;
+    }
+  }
+}
+
+.button {
+  @include flex-center-center();
+  width: 204px;
+  height: 56px;
+  background: $yellow-color;
+  font-size: $fontSize-xs;
+  font-weight: $fontWeight-m;
+  color: $primary-color;
+  line-height: 24px;
+  transition: transform 250ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-yellow-color;
+    transform: translateX(10px);
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+  }
+}

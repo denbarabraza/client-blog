@@ -22,11 +22,15 @@
     "eslint": "^8.47.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
+    "next-intl": "^2.19.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.1.6"
+    "react-i18next": "^13.2.0",
+    "typescript": "5.1.6",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
+    "@hookform/resolvers": "^3.3.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -39,9 +43,11 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-storybook": "^0.6.13",
     "lint-staged": "^14.0.1",
     "mrm": "2",
     "prettier": "3.0.2",
+    "react-hook-form": "^7.45.4",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2"
   }

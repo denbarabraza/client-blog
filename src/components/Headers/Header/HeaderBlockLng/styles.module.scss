@@ -1,0 +1,21 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  width: $width-xss;
+
+  @media (max-width: $tablet) {
+    margin: $margin-xs auto $margin-xs;
+  }
+}
+
+.switcher {
+  @include flex-between-center();
+  font-size: $fontSize-xxs;
+  text-transform: uppercase;
+}
+
+.currentLng {
+  color: $yellow-color;
+}
+

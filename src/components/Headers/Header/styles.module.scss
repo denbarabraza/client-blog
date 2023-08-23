@@ -1,0 +1,48 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.header {
+  @include flex-between-center();
+  width: $width-xxl;
+  height: 80px;
+  background-color: $primary-color;
+  color: $white-color;
+
+  @media (max-width: $tablet) {
+    height: fit-content;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 $padding-s;
+  width: $width-xxl;
+}
+
+.navbar {
+  @include flex-between-center();
+  width: $width-xxl;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-size: $fontSize-s;
+  font-weight: $fontWeight-m;
+  color: $white-color;
+
+  @media (max-width: $tablet) {
+    margin-top: $margin-xs;
+  }
+}
+
+.links {
+  @include flex-between-center();
+  width: $width-m;
+
+  @media (max-width: $tablet) {
+    width: $width-xxs;
+  }
+}
