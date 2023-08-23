@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Business",
+    "titleRus": "Бизнес",
+    "icon": "/assets/icons/business.svg",
+    "info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "title": "Startup",
+    "titleRus": "Стартап",
+    "icon": "/assets/icons/startup.svg",
+    "info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "title": "Economy",
+    "titleRus": "Экономика",
+    "icon": "/assets/icons/economy.svg",
+    "info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "title": "Technology",
+    "titleRus": "Технологии",
+    "icon": "/assets/icons/technology.svg",
+    "info": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  }
+]

@@ -1,0 +1,91 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.navMenu {
+  @include flex-between-center();
+  width: $width-xs;
+  height: $height-xxl;
+
+  a {
+    color: $white-color;
+    transition: transform 250ms;
+
+    &:hover {
+      color: $yellow-color;
+      transform: translateY(-3px);
+    }
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: $yellow-color;
+  text-underline-offset: 10px;
+}
+
+.burger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: $tablet) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.button {
+  width: $width-xxs;
+  height: fit-content;
+  background-color: $white-color;
+  padding: $padding-12xp $padding-16xp;
+  font-size: $fontSize-xs;
+  font-weight: $fontWeight-m;
+  color: $primary-color;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $yellow-color;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: $margin-xs;
+    margin: 0 auto;
+    margin-bottom: $margin-xs;
+    width: $width-xxs;
+    height: 30px;
+    font-size: $fontSize-xxxs;
+  }
+}
+
+.video_wrapper {
+  @include flex-center-center();
+  position: fixed;
+  width: 50vw;
+  height: 50vh;
+  left: 0;
+  bottom: 0;
+  background-color: $translusent-color;
+  backdrop-filter: blur(4px);
+  z-index: $zIndex-xl;
+  opacity: $opacity-l;
+}
+
+.video {
+  border: none;
+}

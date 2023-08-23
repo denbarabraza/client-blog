@@ -83,6 +83,9 @@
     "import/extensions": "off",
     "import/prefer-default-export": "off",
     "consistent-return": "off",
+    "react/function-component-definition": [
+      "off"
+    ],
     "padding-line-between-statements": [
       "error",
       {
@@ -148,13 +151,6 @@
         ]
       }
     ],
-    "react/function-component-definition": [
-      2,
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
-    ],
     "react/jsx-props-no-spreading": [
       0,
       {
@@ -174,7 +170,6 @@
         "peerDependencies": true
       }
     ],
-    "simple-import-sort/exports": "error",
     "simple-import-sort/imports": [
       "error",
       {
@@ -183,9 +178,6 @@
             "^react$",
             "^next",
             "^[a-z]"
-          ],
-          [
-            "^@redux"
           ],
           [
             "^@"

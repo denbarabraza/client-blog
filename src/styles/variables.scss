@@ -1,0 +1,138 @@
+$primary-color: #232536;
+$yellow-color: #fbd050;
+$dark-yellow-color: #eec14a;
+$purple-color: #5a34a9;
+$dark-gray-color: #4c4c4c;
+$blue-gray-color: #2e3040;
+$medium-gray-color: #6e6f77;
+$gray-color: #f4f4f4;
+$lavender-color: #f4f0f8;
+$beige-color: #fcf7eb;
+$white-color: #ffffff;
+$translusent-color: rgba(0, 0, 0, 0.1);
+
+$width-xxl: 100%;
+$width-ll: 1280px;
+$width-ml: 1024px;
+$width-l: 780px;
+$width-m: 700px;
+$width-mm: 580px;
+$width-s: 470px;
+$width-xs: 414px;
+$width-xxs: 150px;
+$width-xss: 110px;
+$width-50px: 50px;
+
+$height-s: 56px;
+$height-ss: 76px;
+$height-m: 144px;
+$height-xxl: 100%;
+
+$margin-xxxs: 22px;
+$margin-xs: 36px;
+$margin-s: 90px;
+
+$padding-12xp: 12px;
+$padding-16xp: 16px;
+$padding-xxs: 22px;
+$padding-xs: 30px;
+$padding-s: 46px;
+$padding-m: 72px;
+
+$fontSize-xxxxs: 12px;
+$fontSize-xxxs: 14px;
+$fontSize-xxs: 16px;
+$fontSize-xs: 18px;
+$fontSize-s: 22px;
+$fontSize-ss: 24px;
+$fontSize-sm: 28px;
+$fontSize-m: 36px;
+$fontSize-l: 48px;
+$fontSize-ll: 56px;
+
+$fontWeight-xs: 500;
+$fontWeight-s: 600;
+$fontWeight-m: 700;
+$fontWeight-l: 900;
+
+$opacity-xs: 0;
+$opacity-s: 0.6;
+$opacity-m: 0.8;
+$opacity-l: 1;
+
+$zIndex-l: 1000;
+$zIndex-xl: 2000;
+
+$mobile: 495px;
+$tablet: 768px;
+$laptop: 1024px;
+$bigScreen: 1920px;
+
+:export {
+  $fontSize-xxxxs: $fontSize-xxxxs;
+  $fontSize-xxxs: $fontSize-xxxs;
+  $fontSize-xxs: $fontSize-xxs;
+  $fontSize-xs: $fontSize-xs;
+  $fontSize-s: $fontSize-s;
+  $fontSize-ss: $fontSize-ss;
+  $fontSize-sm: $fontSize-sm;
+  $fontSize-m: $fontSize-m;
+  $fontSize-l: $fontSize-l;
+  $fontSize-ll: $fontSize-ll;
+
+  $primary-color: $primary-color;
+  $dark-yellow-color: $dark-yellow-color;
+  $yellow-color: $yellow-color;
+  $purple-color: $purple-color;
+  $dark-gray-color: $dark-gray-color;
+  $blue-gray-color: $blue-gray-color;
+  $medium-gray-color: $medium-gray-color;
+  $gray-color: $gray-color;
+  $lavender-color: $lavender-color;
+  $beige-color: $beige-color;
+  $white-color: $white-color;
+  $translusent-color: $translusent-color;
+
+  $width-xxl: $width-xxl;
+  $width-ll: $width-ll;
+  $width-ml: $width-ml;
+  $width-l: $width-l;
+  $width-mm: $width-mm;
+  $width-m: $width-m;
+  $width-s: $width-s;
+  $width-xs: $width-xs;
+  $width-xxs: $width-xxs;
+  $width-xss: $width-xss;
+
+  $height-s: $height-s;
+  $height-ss: $height-ss;
+  $height-m: $height-m;
+  $height-xxl: $height-xxl;
+
+  $margin-xxxs: $margin-xxxs;
+  $margin-xs: $margin-xs;
+  $margin-s: $margin-s;
+
+  $padding-xxs: $padding-xxs;
+  $padding-xs: $padding-xs;
+  $padding-s: $padding-s;
+  $padding-m: $padding-m;
+
+  $mobile: $mobile;
+  $tablet: $tablet;
+  $laptop: $laptop;
+  $bigScreen: $bigScreen;
+
+  $fontWeight-xs: $fontWeight-xs;
+  $fontWeight-s: $fontWeight-s;
+  $fontWeight-m: $fontWeight-m;
+  $fontWeight-l: $fontWeight-l;
+
+  $opacity-xs: $opacity-xs;
+  $opacity-s: $opacity-s;
+  $opacity-m: $opacity-m;
+  $opacity-l: $opacity-l;
+
+  $zIndex-l: $zIndex-l;
+  $zIndex-xl: $zIndex-xl;
+}
