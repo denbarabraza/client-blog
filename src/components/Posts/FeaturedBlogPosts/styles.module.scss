@@ -1,0 +1,65 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include flex-between-center();
+  @include blockAnimation();
+  margin: 0 auto;
+  margin-bottom: $margin-xs;
+
+  @media (max-width: $tablet) {
+    @include flex-column-center();
+  }
+}
+
+.preview {
+  @include flex-column-between();
+}
+
+.content {
+  @media (max-width: $tablet) {
+    margin-bottom: $margin-xs;
+  }
+}
+
+.header {
+  @include flex-between-center();
+  margin-bottom: $margin-xs;
+
+  a {
+    color: $dark-yellow-color;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: $tablet) {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.title {
+  font-size: $fontSize-m;
+  font-weight: $fontWeight-m;
+  color: $primary-color;
+  line-height: 48px;
+  letter-spacing: -2px;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+    font-size: $fontSize-s;
+    font-weight: $fontWeight-s;
+    color: $primary-color;
+    line-height: 24px;
+  }
+}

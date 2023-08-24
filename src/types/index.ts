@@ -1,8 +1,10 @@
+import { LocaleValueEnum } from '@/constants/enums';
+
 export interface ILanguage {
-  local: { [key: string]: string };
+  locale: LocaleValueEnum;
 }
 
-export interface IPageProps {
+export interface IPage {
   params: ILanguage;
 }
 

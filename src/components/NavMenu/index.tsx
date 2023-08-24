@@ -63,7 +63,7 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
                 allowFullScreen
                 title='video'
                 className={styles.video}
-                src='https://www.youtube.com/embed/__-vp0g_BhA'
+                src='https://www.youtube.com/embed/lQQiwf9z5gQ'
               />
             </Modal>
           )}

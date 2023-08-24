@@ -2,26 +2,39 @@
 
 import React, { FC, Fragment } from 'react';
 import { useTranslations } from 'next-intl';
+import ShortPostAboutUs from 'components/Posts/ShortPostAboutUs';
 
+import Categories from '@/components/Categories';
 import HomeHeader from '@/components/Headers/HomeHeader';
-import { IPageProps } from '@/types';
+import Layout from '@/components/Layout';
+import InfoInHome from '@/components/MisionVision';
+import FeaturedBlogPosts from '@/components/Posts/FeaturedBlogPosts';
+import { MissionVisionTypeEnum } from '@/constants/enums';
+import { IPage } from '@/types';
 
 import styles from './page.module.scss';
 
-const Home: FC<IPageProps> = ({ params: { local } }) => {
-  const t = useTranslations('Home');
+const Home: FC<IPage> = ({ params: { locale } }) => {
+  const t = useTranslations();
   const components = [
     <HomeHeader key={0} />,
-    /* <Layout>
-                          <FeaturedBlogPosts lng={lng} />
-                        </Layout>,
-                        <Layout>
-                          <MisionVision lng={lng} variant='' />
-                        </Layout>,
-                        <Layout>
-                          <Categories categoriesTitle={t('Home.categoriesTitle')} titleAlign='center' />
-                        </Layout>,
-                        <SpecialPost lng={lng} />,
+    <Layout key={1}>
+      <FeaturedBlogPosts />
+    </Layout>,
+    <Layout key={2}>
+      <InfoInHome variant={MissionVisionTypeEnum.Home} />
+    </Layout>,
+    <Layout key={3}>
+      <Categories
+        locale={locale}
+        categoriesTitle={t('Home.categoriesTitle')}
+        titleAlign='center'
+      />
+    </Layout>,
+    <ShortPostAboutUs key={4} />,
+    /*
+
+                        ,
                         <Layout>
                           <Authors lng={lng} variant='home' />
                         </Layout>,
@@ -39,7 +52,7 @@ const Home: FC<IPageProps> = ({ params: { local } }) => {
   return (
     <div className={styles.wrapper}>
       {components.map(component => (
-        <Fragment key={component.type.name}>{component}</Fragment>
+        <Fragment key={component.key}>{component}</Fragment>
       ))}
     </div>
   );

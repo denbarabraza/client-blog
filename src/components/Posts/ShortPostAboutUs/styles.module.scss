@@ -1,0 +1,98 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include blockAnimation();
+  position: relative;
+  width: $width-ll;
+  margin: $margin-xs auto $margin-xs;
+
+  @media (max-width: $tablet) {
+    margin: $margin-xxxs auto;
+    width: fit-content;
+    text-align: center;
+  }
+}
+
+.image {
+  position: relative;
+  width: $width-ml;
+  height: 700px;
+  background: url('/assets/images/aboutUsSmall.png') 0 $width-xxl;
+  background-size: cover;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.content {
+  position: absolute;
+  width: $width-l;
+  padding: $padding-xs;
+  top: $height-m;
+  right: 0;
+  background-color: $white-color;
+  height: calc(100% - $height-m);
+  color: $primary-color;
+
+  @media (max-width: $tablet) {
+    position: static;
+    top: $height-s;
+    height: calc(100% - $height-s);
+    width: fit-content;
+  }
+}
+
+.label {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-xxs;
+  font-weight: $fontWeight-s;
+  color: $primary-color;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-l;
+  font-weight: $fontWeight-m;
+  line-height: 64px;
+  letter-spacing: -2px;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-s;
+    line-height: 24px;
+  }
+}
+
+.text {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-xxs;
+  line-height: 28px;
+  color: $medium-gray-color;
+}
+
+.button {
+  @include flex-center-center();
+  margin-top: $margin-xs;
+  width: 269px;
+  height: $height-s;
+  background: $yellow-color;
+  font-size: $fontSize-xs;
+  font-weight: $fontWeight-m;
+  line-height: 24px;
+  color: $primary-color;
+  transition: transform 250ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-yellow-color;
+    transform: translateX(10px);
+  }
+
+  @media (max-width: $tablet) {
+    margin: $margin-xxxs auto;
+  }
+}

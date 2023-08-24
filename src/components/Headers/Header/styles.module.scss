@@ -4,9 +4,11 @@
 .header {
   @include flex-between-center();
   width: $width-xxl;
-  height: 80px;
+  height: $height-ss;
   background-color: $primary-color;
   color: $white-color;
+  position: fixed;
+  z-index: $zIndex-xxl;
 
   @media (max-width: $tablet) {
     height: fit-content;

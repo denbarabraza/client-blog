@@ -1,0 +1,29 @@
+@import "styles/variables";
+
+.wrapper {
+  margin: $margin-xs auto $margin-xs;
+}
+
+.title {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-m;
+  font-weight: $fontWeight-m;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: $primary-color;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-s;
+    font-weight: $fontWeight-s;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

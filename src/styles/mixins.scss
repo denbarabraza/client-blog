@@ -28,7 +28,7 @@
   align-items: flex-start;
 }
 
-@mixin enter-animation() {
+@mixin blockAnimation() {
   animation-duration: 1s;
   animation-name: slidein;
 

@@ -5,10 +5,11 @@ $purple-color: #5a34a9;
 $dark-gray-color: #4c4c4c;
 $blue-gray-color: #2e3040;
 $medium-gray-color: #6e6f77;
-$gray-color: #f4f4f4;
+$gray-color: #e5e5e5;
 $lavender-color: #f4f0f8;
 $beige-color: #fcf7eb;
 $white-color: #ffffff;
+$black-opacity-color: rgba(0, 0, 0, 0.7);
 $translusent-color: rgba(0, 0, 0, 0.1);
 
 $width-xxl: 100%;
@@ -22,16 +23,21 @@ $width-xs: 414px;
 $width-xxs: 150px;
 $width-xss: 110px;
 $width-50px: 50px;
+$width-50vw: 50vw;
+$width-100vw: 100vw;
 
 $height-s: 56px;
 $height-ss: 76px;
 $height-m: 144px;
 $height-xxl: 100%;
+$height-90vh: 90vh;
+$height-100vh: 100vh;
 
 $margin-xxxs: 22px;
 $margin-xs: 36px;
 $margin-s: 90px;
 
+$padding-10xp: 10px;
 $padding-12xp: 12px;
 $padding-16xp: 16px;
 $padding-xxs: 22px;
@@ -62,6 +68,9 @@ $opacity-l: 1;
 
 $zIndex-l: 1000;
 $zIndex-xl: 2000;
+$zIndex-xxl: 3000;
+$zIndex-xxl10: 3010;
+$zIndex-xxl20: 3020;
 
 $mobile: 495px;
 $tablet: 768px;
