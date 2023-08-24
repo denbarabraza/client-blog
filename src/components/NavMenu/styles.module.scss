@@ -3,7 +3,7 @@
 
 .navMenu {
   @include flex-between-center();
-  width: $width-xs;
+  width: $width-xxl;
   height: $height-xxl;
 
   a {
@@ -52,6 +52,7 @@
   height: fit-content;
   background-color: $white-color;
   padding: $padding-10xp $padding-12xp;
+  margin-left: $margin-xxxs;
   font-size: $fontSize-xxs;
   font-weight: $fontWeight-xs;
   color: $primary-color;

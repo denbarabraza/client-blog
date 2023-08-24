@@ -1,0 +1,42 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include flex-between-center();
+  margin: $margin-s auto;
+  color: $medium-gray-color;
+
+  @media (max-width: $tablet) {
+    @include flex-column-center();
+  }
+}
+
+.label {
+  font-size: $fontSize-xxxs;
+  line-height: 20px;
+}
+
+.title {
+  font-size: $fontSize-ss;
+  font-weight: $fontWeight-m;
+  line-height: 32px;
+
+  @media (max-width: $tablet) {
+    @include flex-column-center();
+    margin-top: $margin-xs;
+    margin-bottom: $margin-xs;
+  }
+}
+
+.icon {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: $tablet) {
+    margin: $margin-xs auto;
+  }
+}

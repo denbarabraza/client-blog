@@ -1,0 +1,147 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  width: $width-xxl;
+  background-color: $blue-gray-color;
+  margin: $margin-xs 0 $margin-xs;
+  padding: $padding-xs 0 $padding-xs;
+}
+
+.form {
+  @include flex-between-center();
+  margin: 0 auto;
+  padding: $padding-s;
+
+  @media (max-width: $laptop) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (max-width: $mobile) {
+    width: $width-xxl;
+  }
+}
+
+.title {
+  width: $width-s;
+  padding-left: $padding-xxs;
+  font-size: $fontSize-m;
+  font-weight: $fontWeight-m;
+  color: $white-color;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+    font-size: $fontSize-s;
+    font-weight: $fontWeight-s;
+  }
+
+  @media (max-width: $laptop) {
+    margin: $margin-xs 0 $margin-xs;
+    width: fit-content;
+    font-size: $fontSize-s;
+    font-weight: $fontWeight-s;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media (max-width: $mobile) {
+    width: $width-xxl;
+    flex-direction: column;
+    height: 200px;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  width: 323px;
+  min-width: 200px;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    width: 200px;
+    max-width: $width-xxl;
+  }
+
+  @media (max-width: $mobile) {
+    width: fit-content;
+  }
+}
+
+.input {
+  width: $width-xxl;
+  height: $height-s;
+  background: transparent;
+  padding: 0 $padding-s 0 $padding-s;
+  font-size: $fontSize-xxs;
+  border: 1px solid $white-color;
+  color: $white-color;
+
+  &::placeholder {
+    color: $white-color;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    border: 1px solid $yellow-color;
+  }
+}
+
+.button {
+  width: 180px;
+  height: $height-s;
+  background-color: $yellow-color;
+  font-size: $fontSize-xs;
+  font-weight: $fontWeight-m;
+  color: $primary-color;
+  border: none;
+  cursor: pointer;
+  transition: transform 250ms;
+
+  &:hover {
+    opacity: $opacity-m;
+    transform: translateX(-10px);
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    width: 200px;
+    max-width: $width-xxl;
+  }
+}
+
+.alert {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: $purple-color;
+  color: $beige-color;
+  font-size: $fontSize-xxs;
+  border-radius: 10px;
+  opacity: $opacity-m;
+  border: none;
+  cursor: pointer;
+
+  z-index: $zIndex-l;
+}
+
+.errorMessage {
+  color: $red-color;
+
+  p {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+}

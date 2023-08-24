@@ -1,3 +1,5 @@
+import { LocaleValueEnum } from '@/constants/enums';
+
 export interface IHeader {
-  locale: 'en' | 'ru';
+  locale: LocaleValueEnum;
 }

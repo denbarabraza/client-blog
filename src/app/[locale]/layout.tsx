@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 
+import Footer from '@/components/Footer';
 import Header from '@/components/Headers/Header';
 import { LocaleValueEnum } from '@/constants/enums';
 
@@ -34,7 +35,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header locale={locale} />
           <main>{children}</main>
-          <div>Footers</div>
+          <Footer locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>
