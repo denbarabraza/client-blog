@@ -1,4 +1,5 @@
 @import "styles/variables";
+@import "styles/mixins";
 
 .wrapper {
   width: $width-xxl;
@@ -8,7 +9,7 @@
   margin-top: $margin-xs;
   text-align: center;
   font-size: $fontSize-m;
-  color: $purple-color;
+  color: $dark-yellow-color;
 }
 
 .button {
@@ -22,7 +23,7 @@
   font-weight: $fontWeight-m;
   font-size: $fontSize-xs;
   line-height: 24px;
-  color: $primary-color;
+  color: $white-color;
   transition: all 0.8s;
   border: none;
   cursor: pointer;
