@@ -76,7 +76,7 @@
   width: $width-xxl;
   height: $height-s;
   background: transparent;
-  padding: 0 $padding-s 0 $padding-s;
+  padding: 0 $padding-10xp;
   font-size: $fontSize-xxs;
   border: 1px solid $white-color;
   color: $white-color;
@@ -103,8 +103,7 @@
   transition: transform 250ms;
 
   &:hover {
-    opacity: $opacity-m;
-    transform: translateX(-10px);
+    transform: scale(1.1);
   }
 
   @media (max-width: $tablet) {
@@ -117,17 +116,16 @@
 .alert {
   position: fixed;
   bottom: 5%;
-  right: 5%;
+  left: 5%;
   width: fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: $purple-color;
+  background-color: $dark-yellow-color;
   color: $beige-color;
   font-size: $fontSize-xxs;
   border-radius: 10px;
-  opacity: $opacity-m;
   border: none;
   cursor: pointer;
 
