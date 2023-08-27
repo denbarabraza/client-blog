@@ -38,13 +38,15 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
           const isActive = checkPathActive(pathName, path);
 
           return (
-            <Link
-              key={name}
-              href={`/${locale}${path}`}
-              className={isActive ? styles.active : ''}
-            >
-              {t(name)}
-            </Link>
+            <div className={styles.linkItem} key={name}>
+              <Link
+                key={name}
+                href={`/${locale}${path}`}
+                className={isActive ? styles.active : ''}
+              >
+                {t(name)}
+              </Link>
+            </div>
           );
         })}
       </nav>

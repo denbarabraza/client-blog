@@ -7,7 +7,7 @@
   width: $width-ll;
   margin: $margin-xs auto $margin-xs;
 
-  @media (max-width: $tablet) {
+  @media (max-width: 1240px) {
     margin: $margin-xxxs auto;
     width: fit-content;
     text-align: center;
@@ -21,12 +21,17 @@
   background: url('/assets/images/aboutUsSmall.png') 0 $width-xxl;
   background-size: cover;
 
+  @media (max-width: $laptop) {
+    width: 100vw;
+  }
   @media (max-width: $tablet) {
     display: none;
   }
 }
 
 .content {
+  @include flex-column-center;
+  justify-content: center;
   position: absolute;
   width: $width-l;
   padding: $padding-xs;
@@ -36,7 +41,8 @@
   height: calc(100% - $height-m);
   color: $primary-color;
 
-  @media (max-width: $tablet) {
+
+  @media (max-width: $laptop) {
     position: static;
     top: $height-s;
     height: calc(100% - $height-s);
@@ -61,7 +67,7 @@
   line-height: 64px;
   letter-spacing: -2px;
 
-  @media (max-width: $tablet) {
+  @media (max-width: $laptop) {
     font-size: $fontSize-s;
     line-height: 24px;
   }
@@ -72,6 +78,7 @@
   font-size: $fontSize-xxs;
   line-height: 28px;
   color: $medium-gray-color;
+  word-break: break-word;
 }
 
 .button {
@@ -92,7 +99,7 @@
     transform: translateX(10px);
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: $laptop) {
     margin: $margin-xxxs auto;
   }
 }

@@ -1,11 +1,12 @@
 @import "styles/variables";
+@import "styles/mixins";
 
 .wrapper {
   margin: $margin-xs auto $margin-xs;
 }
 
 .title {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-xxxs;
   font-size: $fontSize-m;
   font-weight: $fontWeight-m;
   line-height: 48px;
@@ -19,8 +20,9 @@
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
+  @include flex-center-center;
+  gap: 20px;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet) {
     flex-direction: column;

@@ -7,7 +7,7 @@ import { IFooter } from '@/components/Footer/interface';
 import LayoutWrapper from '@/components/LayoutWrapper';
 import NavMenu from '@/components/NavMenu';
 import { HeaderTypeEnum } from '@/components/NavMenu/types';
-import { blogTitle, socials } from '@/constants';
+import { socials } from '@/constants';
 
 import Newsletter from './Newsletter';
 
@@ -21,7 +21,7 @@ const Footer: FC<IFooter> = ({ locale }) => {
       <div className={styles.wrapper}>
         <LayoutWrapper>
           <div className={styles.navbar}>
-            <span className={styles.title}>{blogTitle}</span>
+            <div className={styles.title}>Modsen Client Blog</div>
             <div className={styles.links}>
               <NavMenu type={HeaderTypeEnum.Footer} locale={locale} />
             </div>

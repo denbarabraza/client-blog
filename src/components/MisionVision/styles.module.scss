@@ -23,8 +23,9 @@
 
 .main {
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
+  @include flex-center-center;
+  gap: 30px;
+  flex-wrap: wrap;
 
   a {
     font-size: $fontSize-xs;

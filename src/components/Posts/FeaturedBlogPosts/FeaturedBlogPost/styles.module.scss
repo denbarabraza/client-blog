@@ -6,6 +6,10 @@
   margin-right: $margin-xs;
   border: 1px solid $gray-color;
   padding: $padding-xxs;
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+  }
 }
 
 .image {

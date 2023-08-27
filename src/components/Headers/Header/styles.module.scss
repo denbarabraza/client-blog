@@ -3,11 +3,9 @@
 
 .header {
   @include flex-between-center();
-  width: $width-xxl;
   height: $height-ss;
   background-color: $primary-color;
   color: $white-color;
-  position: fixed;
   z-index: $zIndex-xxl;
 
   @media (max-width: $tablet) {
@@ -24,9 +22,11 @@
 .navbar {
   @include flex-between-center();
   width: $width-xxl;
+  gap: 70px;
 
   @media (max-width: $tablet) {
     flex-direction: column;
+    gap: 0;
   }
 }
 
@@ -35,7 +35,12 @@
   font-weight: $fontWeight-m;
   color: $white-color;
 
+  @media (max-width: 780px) {
+    font-size: $fontSize-xs;
+  }
+
   @media (max-width: $tablet) {
+    font-size: $fontSize-s;
     margin-top: $margin-xs;
   }
 }

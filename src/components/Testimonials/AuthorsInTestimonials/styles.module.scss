@@ -4,7 +4,7 @@
 .wrapper {
   @include flex-column-between();
   width: $width-l;
-  height: 440px;
+  min-height: 440px;
   margin: 0 auto;
   padding-left: $padding-xxs;
   color: $primary-color;
@@ -21,10 +21,12 @@
 }
 
 .review {
+  @include flex-center-center;
   margin-bottom: $margin-xs;
   font-size: $fontSize-ss;
   font-weight: $fontWeight-m;
   line-height: 32px;
+  word-break: break-word;
 
   @media (max-width: $tablet) {
     font-size: $fontSize-xs;
@@ -39,7 +41,8 @@
   justify-content: space-between;
 
   @media (max-width: $tablet) {
-    flex-direction: column-reverse;
+    align-items: center;
+    flex-direction: column;
   }
 }
 

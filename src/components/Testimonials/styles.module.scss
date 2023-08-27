@@ -14,7 +14,7 @@
 
 .content {
   @include flex-between-center();
-  width: fit-content;
+  width: 90%;
   margin: 0 auto;
 
   @media (max-width: $tablet) {

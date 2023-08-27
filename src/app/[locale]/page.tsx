@@ -26,28 +26,18 @@ const Home: FC<IPage> = ({ params: { locale } }) => {
       <HomeHeader />,
       <LayoutWrapper>
         <FeaturedBlogPosts />
-      </LayoutWrapper>
-      <LayoutWrapper>
         <InfoInHome variant={MissionVisionTypeEnum.Home} />
-      </LayoutWrapper>
-      <LayoutWrapper>
         <Categories
           locale={locale}
           categoriesTitle={t('Home.categoriesTitle')}
           titleAlign='center'
         />
       </LayoutWrapper>
-      <ShortPostAboutUs />,
+      <ShortPostAboutUs />
       <LayoutWrapper>
         <Authors variant='home' />
-      </LayoutWrapper>
-      <LayoutWrapper>
         <Partners />
-      </LayoutWrapper>
-      <LayoutWrapper>
         <Testimonials />
-      </LayoutWrapper>
-      <LayoutWrapper>
         <JoinOurTeam />
       </LayoutWrapper>
     </div>

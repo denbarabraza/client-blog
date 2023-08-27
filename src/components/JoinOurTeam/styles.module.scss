@@ -2,8 +2,9 @@
 @import "styles/mixins";
 
 .wrapper {
+  @include flex-center-center;
+  flex-direction: column;
   margin: $margin-xs auto $margin-xs;
-  width: $width-xs;
   text-align: center;
 }
 
@@ -16,6 +17,7 @@
   color: $primary-color;
 
   @media (max-width: $tablet) {
+    width: $width-xxl;
     font-size: 26px;
     line-height: 32px;
   }

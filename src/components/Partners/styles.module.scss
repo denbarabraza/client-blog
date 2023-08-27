@@ -2,8 +2,10 @@
 @import "styles/mixins";
 
 .wrapper {
-  @include flex-between-center();
+  @include flex-center-center();
+  flex-wrap: wrap;
   margin: $margin-s auto;
+  gap: 20px;
   color: $medium-gray-color;
 
   @media (max-width: $tablet) {
@@ -20,12 +22,6 @@
   font-size: $fontSize-ss;
   font-weight: $fontWeight-m;
   line-height: 32px;
-
-  @media (max-width: $tablet) {
-    @include flex-column-center();
-    margin-top: $margin-xs;
-    margin-bottom: $margin-xs;
-  }
 }
 
 .icon {
@@ -37,6 +33,6 @@
   }
 
   @media (max-width: $tablet) {
-    margin: $margin-xs auto;
+    margin: $margin-xxxs auto;
   }
 }

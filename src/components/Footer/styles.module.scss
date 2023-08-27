@@ -20,16 +20,22 @@
 .navbar {
   @include flex-between-center();
   width: $width-xxl;
+
+  @media (max-width: $mobile) {
+    justify-content: center;
+  }
 }
 
 .title {
   font-size: $fontSize-ss;
   font-weight: $fontWeight-m;
   color: $white-color;
+  width: $width-50pr;
 
   @media (max-width: $tablet) {
     font-size: $fontSize-xs;
     line-height: 22px;
+    width: $width-xxl;
   }
 }
 

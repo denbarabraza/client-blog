@@ -41,4 +41,9 @@
   border-radius: 10px;
   overflow-y: auto;
   z-index: $zIndex-xxl20;
+
+  @media (max-width: $tablet) {
+    width: $width-70vw;
+    height: $height-70vh;
+  }
 }

@@ -4,6 +4,7 @@
 .navMenu {
   @include flex-between-center();
   width: $width-xxl;
+  gap: 30px;
   height: $height-xxl;
 
   a {
@@ -47,7 +48,12 @@
   }
 }
 
+.linkItem{
+  max-width: $width-xss;
+}
+
 .button {
+  @include flex-center-center;
   width: $width-xxs;
   height: fit-content;
   background-color: $white-color;
