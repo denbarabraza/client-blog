@@ -13,7 +13,7 @@ import JoinOurTeam from '@/components/JoinOurTeam';
 import InfoInHome from '@/components/MisionVision';
 import FeaturedBlogPosts from '@/components/Posts/FeaturedBlogPosts';
 import Testimonials from '@/components/Testimonials';
-import { MissionVisionTypeEnum } from '@/constants/enums';
+import { AuthorsInPageEnum, MissionVisionTypeEnum } from '@/constants/enums';
 import { IPage } from '@/types';
 
 import styles from './page.module.scss';
@@ -23,7 +23,7 @@ const Home: FC<IPage> = ({ params: { locale } }) => {
 
   return (
     <div className={styles.wrapper}>
-      <HomeHeader />,
+      <HomeHeader />
       <LayoutWrapper>
         <FeaturedBlogPosts />
         <InfoInHome variant={MissionVisionTypeEnum.Home} />
@@ -35,7 +35,7 @@ const Home: FC<IPage> = ({ params: { locale } }) => {
       </LayoutWrapper>
       <ShortPostAboutUs />
       <LayoutWrapper>
-        <Authors variant='home' />
+        <Authors variant={AuthorsInPageEnum.Home} />
         <Partners />
         <Testimonials />
         <JoinOurTeam />
