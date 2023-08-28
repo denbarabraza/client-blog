@@ -28,10 +28,9 @@ const Footer: FC<IFooter> = ({ locale }) => {
           </div>
           <Newsletter />
           <div className={styles.contacts}>
-            <section className={styles.info}>
-              <p>{t('Footer.info')}</p>
-              <p>Hello@finsweet.com 020 7993 2905</p>
-            </section>
+            <div className={styles.info}>
+              {t('Footer.info')}, Hello@finsweet.com 020 7993 2905
+            </div>
             <div className={styles.icons}>
               {socials.map(({ icon, href }) => (
                 <a href={href} key={href}>

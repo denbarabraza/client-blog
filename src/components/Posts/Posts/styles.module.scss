@@ -1,0 +1,71 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.message {
+  margin-bottom: $margin-xs;
+  text-align: center;
+  font-size: $fontSize-s;
+  color: $dark-gray-color;
+}
+
+.wrapper {
+  margin: 0 $margin-xs $margin-xs auto;
+
+  @media (max-width: $tablet) {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.title {
+  padding-bottom: $padding-xs;
+  font-size: $fontSize-l;
+  font-weight: $fontWeight-m;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: $primary-color;
+  border-bottom: 1px solid $gray-color;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    font-size: $fontSize-m;
+    font-weight: $fontWeight-s;
+    line-height: 42px;
+  }
+}
+
+.pagination {
+  width: 200px;
+  margin: 64px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  font-size: $fontSize-sm;
+  font-weight: $fontWeight-m;
+  letter-spacing: -1px;
+  color: $primary-color;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 250ms;
+
+  &:hover {
+    color: $yellow-color;
+    transform: translateX(-10px);
+  }
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-xxs;
+    font-weight: $fontWeight-s;
+  }
+}
+
+.disabled {
+  font-size: $fontSize-ss;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: $medium-gray-color;
+}
