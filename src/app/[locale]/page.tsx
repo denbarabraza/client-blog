@@ -1,46 +1,45 @@
 'use client';
 
-import React, { FC, Fragment } from 'react';
+import React, { FC } from 'react';
 import { useTranslations } from 'next-intl';
+import LayoutWrapper from 'components/LayoutWrapper';
+import Partners from 'components/Partners';
+import ShortPostAboutUs from 'components/Posts/ShortPostAboutUs';
 
+import Authors from '@/components/Authors';
+import Categories from '@/components/Categories';
 import HomeHeader from '@/components/Headers/HomeHeader';
-import { IPageProps } from '@/types';
+import JoinOurTeam from '@/components/JoinOurTeam';
+import InfoInHome from '@/components/MisionVision';
+import FeaturedBlogPosts from '@/components/Posts/FeaturedBlogPosts';
+import Testimonials from '@/components/Testimonials';
+import { MissionVisionTypeEnum } from '@/constants/enums';
+import { IPage } from '@/types';
 
 import styles from './page.module.scss';
 
-const Home: FC<IPageProps> = ({ params: { local } }) => {
-  const t = useTranslations('Home');
-  const components = [
-    <HomeHeader key={0} />,
-    /* <Layout>
-                          <FeaturedBlogPosts lng={lng} />
-                        </Layout>,
-                        <Layout>
-                          <MisionVision lng={lng} variant='' />
-                        </Layout>,
-                        <Layout>
-                          <Categories categoriesTitle={t('Home.categoriesTitle')} titleAlign='center' />
-                        </Layout>,
-                        <SpecialPost lng={lng} />,
-                        <Layout>
-                          <Authors lng={lng} variant='home' />
-                        </Layout>,
-                        <Layout>
-                          <PartnersList lng={lng} />
-                        </Layout>,
-                        <Layout>
-                          <Testimonials lng={lng} />
-                        </Layout>,
-                        <Layout>
-                          <JoinOurTeam lng={lng} />
-                        </Layout>, */
-  ];
+const Home: FC<IPage> = ({ params: { locale } }) => {
+  const t = useTranslations();
 
   return (
     <div className={styles.wrapper}>
-      {components.map(component => (
-        <Fragment key={component.type.name}>{component}</Fragment>
-      ))}
+      <HomeHeader />,
+      <LayoutWrapper>
+        <FeaturedBlogPosts />
+        <InfoInHome variant={MissionVisionTypeEnum.Home} />
+        <Categories
+          locale={locale}
+          categoriesTitle={t('Home.categoriesTitle')}
+          titleAlign='center'
+        />
+      </LayoutWrapper>
+      <ShortPostAboutUs />
+      <LayoutWrapper>
+        <Authors variant='home' />
+        <Partners />
+        <Testimonials />
+        <JoinOurTeam />
+      </LayoutWrapper>
     </div>
   );
 };

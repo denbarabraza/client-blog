@@ -10,8 +10,6 @@ import styles from './styles.module.scss';
 const HeaderBlockLng: FC<IHeaderBase> = ({ locale, translationPath }) => {
   const languages = ['en', 'ru'];
 
-  console.log(locale);
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.switcher}>

@@ -1,0 +1,58 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  padding: $padding-xs;
+  transition: all 0.4s;
+  border: 1px solid $gray-color;
+  width: $width-xxl;
+
+  &:hover {
+    background-color: $dark-yellow-color;
+    a {
+      color: $white-color;
+    }
+  }
+}
+
+.info {
+  margin-bottom: $margin-xxxs;
+  font-size: $fontSize-xxxs;
+  font-weight: $fontWeight-xs;
+  color: $medium-gray-color;
+
+  a {
+    color: $dark-yellow-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $white-color;
+      text-underline-offset: 5px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-xxxxs;
+    line-height: 14px;
+  }
+}
+
+.title {
+  display: block;
+  font-size: $fontSize-ss;
+  font-weight: $fontWeight-m;
+  color: $primary-color;
+  line-height: 32px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $white-color;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-xs;
+    font-weight: $fontWeight-s;
+    line-height: 24px;
+  }
+}

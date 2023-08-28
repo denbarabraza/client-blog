@@ -38,13 +38,15 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
           const isActive = checkPathActive(pathName, path);
 
           return (
-            <Link
-              key={name}
-              href={`/${locale}${path}`}
-              className={isActive ? styles.active : ''}
-            >
-              {t(name)}
-            </Link>
+            <div className={styles.linkItem} key={name}>
+              <Link
+                key={name}
+                href={`/${locale}${path}`}
+                className={isActive ? styles.active : ''}
+              >
+                {t(name)}
+              </Link>
+            </div>
           );
         })}
       </nav>
@@ -63,7 +65,7 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
                 allowFullScreen
                 title='video'
                 className={styles.video}
-                src='https://www.youtube.com/embed/__-vp0g_BhA'
+                src='https://www.youtube.com/embed/lQQiwf9z5gQ'
               />
             </Modal>
           )}

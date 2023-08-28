@@ -1,0 +1,103 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include flex-column-between();
+  width: $width-l;
+  min-height: 440px;
+  margin: 0 auto;
+  padding-left: $padding-xxs;
+  color: $primary-color;
+  border-left: 1px solid $medium-gray-color;
+
+  @media (max-width: $tablet) {
+    margin-top: $margin-xs;
+    width: $width-xxl;
+    border-left: none;
+    border-top: 1px solid $medium-gray-color;
+    padding-top: $padding-xs;
+    padding-left: 0;
+  }
+}
+
+.review {
+  @include flex-center-center;
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-ss;
+  font-weight: $fontWeight-m;
+  line-height: 32px;
+  word-break: break-word;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-xs;
+    font-weight: $fontWeight-xs;
+    line-height: 22px;
+  }
+}
+
+.content {
+  width: $width-xxl;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: $fontSize-ss;
+  font-weight: $fontWeight-m;
+  line-height: 32px;
+}
+
+.from {
+  font-size: $fontSize-xxs;
+  color: $medium-gray-color;
+  line-height: 28px;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  margin-right: $margin-xs;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+
+.navigation {
+  width: $width-xss;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet) {
+    margin: $margin-xs 0;
+  }
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.disabled {
+  cursor: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: $opacity-s;
+  }
+}

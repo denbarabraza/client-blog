@@ -1,17 +1,17 @@
 'use client';
 
-import React, { FC, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import posts from '@/shared/posts.json';
+import posts from '@/constants/data/posts.json';
 import { findAuthorById } from '@/utils/findAuthorById';
 
 import styles from './styles.module.scss';
 
 const { title, authorId, createdAt, id, image, preview, category } = posts[0];
 
-const HomeHeader: FC = () => {
+const HomeHeader = () => {
   const t = useTranslations();
   const { name } = useMemo(() => findAuthorById(Number(id)), [id]);
 
