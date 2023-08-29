@@ -1,0 +1,22 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  margin-top: $margin-xs;
+  width: $width-xxl;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: $margin-xxxs;
+  font-size: $fontSize-m;
+  font-weight: $fontWeight-m;
+  color: $primary-color;
+  line-height: 48px;
+  letter-spacing: -2px;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-sm;
+    line-height: 32px;
+  }
+}

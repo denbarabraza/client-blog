@@ -1,0 +1,81 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  margin-bottom: $margin-xs;
+  position: relative;
+  display: flex;
+  width: $width-250px;
+  height: fit-content;
+
+  @media (max-width: $tablet) {
+    width: fit-content;
+  }
+}
+
+.input {
+  width: $width-xxl;
+  padding: $padding-16xp;
+  border: 1px solid $medium-gray-color;
+  border-radius: 5px;
+  border-right: none;
+  font-size: $fontSize-xs;
+  color: $primary-color;
+
+  &::placeholder {
+    color: $primary-color;
+  }
+
+  &:focus {
+    border: 1px solid $yellow-color;
+    border-right: none;
+  }
+}
+
+.button {
+  width: $width-70px;
+  background-color: $yellow-color;
+  font-size: $fontSize-xxs;
+  color: $primary-color;
+  font-weight: $fontWeight-m;
+  line-height: 24px;
+  border-radius: 6px;
+  border: none;
+  transition: transform 250ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-yellow-color;
+    transform: scale(1.1);
+  }
+}
+
+.list {
+  width: $width-250px;
+  max-height: $height-m;
+  position: absolute;
+  top: 60px;
+  background-color: $white-color;
+  overflow: scroll;
+  border: 1px solid $dark-yellow-color;
+  border-radius: 5px;
+
+  z-index: $zIndex-l;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.item {
+  width: $width-xxl;
+  padding: $padding-10xp;
+  font-size: $fontSize-xs;
+  color: $primary-color;
+  cursor: pointer;
+  transition: all 0.8s;
+
+  &:hover {
+    color: $dark-yellow-color;
+  }
+}

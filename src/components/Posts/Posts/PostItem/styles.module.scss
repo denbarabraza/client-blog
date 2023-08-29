@@ -1,0 +1,84 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include flex-between-center();
+  margin: $margin-xs 0 $margin-xs;
+  width: $width-xxl;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $yellow-color;
+  }
+
+  @media (max-width: $tablet) {
+    background-color: $lavender-color;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.image {
+  position: relative;
+  width: $width-xs;
+  aspect-ratio: 1 / 1;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.content {
+  width: fit-content;
+  padding-left: $padding-xxs;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  @media (max-width: $tablet) {
+    width: $width-xxl;
+    padding: $padding-xs;
+  }
+}
+
+.category {
+  margin-bottom: $margin-xs;
+  text-transform: uppercase;
+  color: $purple-color;
+  font-size: $fontSize-xxs;
+  font-weight: $fontWeight-s;
+  line-height: 20px;
+  letter-spacing: 3px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 0;
+    font-size: 9px;
+  }
+}
+
+.title {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-ss;
+  line-height: 36px;
+  font-weight: $fontWeight-m;
+  color: $primary-color;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-xxxs;
+    line-height: 14px;
+  }
+}
+
+.preview {
+  font-size: $fontSize-xxs;
+  line-height: 28px;
+  color: $medium-gray-color;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-xxxxs;
+    line-height: 12px;
+  }
+}

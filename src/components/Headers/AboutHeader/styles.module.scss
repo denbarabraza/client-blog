@@ -74,12 +74,10 @@
   position: absolute;
   top: 0;
   right: 5%;
-  margin-bottom: $margin-xs;
   width: $width-s;
   font-size: $fontSize-xxs;
   color: $dark-gray-color;
   line-height: 28px;
-  z-index: 5000;
 
   @media (max-width: $laptop) {
     text-align: center;

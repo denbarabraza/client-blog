@@ -1,0 +1,111 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  margin-bottom: $margin-xs;
+  background-color: $lavender-color;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+.header {
+  @include flex-between-start();
+  position: relative;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: $padding-m 0 $padding-s;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    width: $width-xxl;
+  }
+}
+
+.image {
+  position: relative;
+  width: $width-xs;
+  aspect-ratio: 3/4;
+
+  @media (max-width: $tablet) {
+    width: $width-xxs;
+    margin: 0 auto $margin-xs;
+  }
+}
+
+.content {
+  margin-left: $margin-xs;
+  width: $width-ml;
+
+  @media (max-width: $tablet) {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-l;
+  font-weight: $fontWeight-s;
+  line-height: 64px;
+  color: $primary-color;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-sm;
+    line-height: 32px;
+  }
+}
+
+.text {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-xxs;
+  color: $medium-gray-color;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.icons {
+  @include flex-between-center();
+  width: $width-xss;
+  cursor: pointer;
+
+  a {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 auto $margin-xxxs;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: $margin-xxxs;
+  }
+}
+
+.pattern {
+  position: absolute;
+  width: $width-xxl;
+  height: 24px;
+  display: flex;
+  bottom: 0;
+}
+
+.left {
+  width: $width-ml;
+  background-color: $yellow-color;
+}
+
+.right {
+  width: $width-xs;
+  background-color: $purple-color;
+}

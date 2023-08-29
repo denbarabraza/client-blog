@@ -1,0 +1,70 @@
+@import "styles/variables";
+
+.wrapper {
+  width: $width-xxl;
+  color: $primary-color;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.header {
+  width: $width-xxl;
+  height: 256px;
+  background-color: $lavender-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: $fontSize-l;
+  font-weight: $fontWeight-m;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-s;
+    font-weight: $fontWeight-s;
+  }
+}
+
+.lastUpdate {
+  margin-top: $margin-xxxs;
+  font-size: $fontSize-xxs;
+  opacity: $opacity-s;
+}
+
+.content {
+  padding: $padding-s 0 $padding-s;
+}
+
+.article {
+  max-width: 768px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    padding: $padding-s;
+  }
+}
+
+.articleTitle {
+  margin-bottom: $margin-xs;
+  font-weight: $fontWeight-m;
+  font-size: $fontSize-m;
+}
+
+.articleSubtitle {
+  margin-bottom: $margin-xs;
+  font-weight: $fontWeight-m;
+  font-size: $fontSize-sm;
+}
+
+.articleText {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-xxs;
+  line-height: 28px;
+  text-align: justify;
+}

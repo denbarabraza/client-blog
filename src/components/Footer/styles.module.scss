@@ -3,7 +3,7 @@
 
 .footer {
   width: $width-xxl;
-  min-height: 500px;
+  min-height:300px;
   padding: $padding-xs 0 $padding-xs;
   background-color: $primary-color;
 
@@ -13,8 +13,7 @@
 }
 
 .wrapper {
-  margin: 0 auto;
-  height: 90%;
+  @include flex-between-center();
 }
 
 .navbar {
@@ -68,6 +67,12 @@
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
   font-size: $fontSize-xxs;
   line-height: 28px;
 
