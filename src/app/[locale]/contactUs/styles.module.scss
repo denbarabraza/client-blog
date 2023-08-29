@@ -1,0 +1,96 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  width: $width-80vw;
+  margin: $margin-s auto $margin-xs;
+
+  @media (max-width: $tablet) {
+    width: fit-content;
+  }
+}
+
+.heading {
+  margin-bottom: $margin-xs;
+  width: $width-xxl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primary-color;
+}
+
+.title {
+  margin-bottom: $margin-xs;
+  text-transform: uppercase;
+  font-size: $fontSize-xxs;
+  font-weight: $fontWeight-l;
+  letter-spacing: 3px;
+}
+
+.subtitle {
+  margin-bottom: $margin-xs;
+  font-size: $fontSize-l;
+  font-weight: $fontWeight-m;
+  line-height: 64px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.text {
+  font-size: $fontSize-xxs;
+  line-height: 28px;
+  color: $medium-gray-color;
+  text-align: center;
+}
+
+.info {
+  width: $width-70pr;
+  padding: $padding-xs 0 $padding-xs;
+  background-color: $purple-color;
+}
+
+.infoWrapper {
+  @include flex-between-start;
+  gap: 20px;
+
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.infoBlock {
+  @include flex-between-start;
+  flex-direction: column;
+  width: $width-50pr;
+  padding-left: $padding-10xp;
+
+}
+
+.infoBlockTitle {
+  text-align: center;
+  margin-bottom: $margin-xxxs;
+  padding-bottom: $padding-10xp;
+  font-size: $fontSize-s;
+  color: $primary-color;
+  width: $width-xxl;
+
+  border-bottom: 1px solid $gray-color;
+}
+
+.infoBlockText {
+  width: $width-xxl;
+  padding-bottom: $padding-10xp;
+  font-size: $fontSize-xs;
+  font-weight: $fontWeight-xs;
+  line-height: 32px;
+  color: $white-color;
+}
+
+.infoBlockNote {
+  font-size: $fontSize-xxs;
+  color: $gray-color;
+  opacity: $opacity-s;
+  line-height: 28px;
+}

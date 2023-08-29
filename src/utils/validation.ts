@@ -13,7 +13,7 @@ export const newsLetterFooterSchema = yup
   })
   .required();
 
-export const formSchema = yup
+export const contactUsSchema = yup
   .object({
     email: yup
       .string()
