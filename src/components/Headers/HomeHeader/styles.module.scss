@@ -76,13 +76,15 @@
 }
 
 .preview {
+  text-align: left;
   margin-bottom: $margin-xxxs;
-  width: $width-l;
+  width: $width-xxl;
   font-size: $fontSize-xs;
   line-height: 28px;
 
   @media (max-width: $tablet) {
     margin-bottom: $margin-xs;
+    margin-left: $margin-xs;
     font-size: $fontSize-xxxxs;
     line-height: 14px;
     width: fit-content;

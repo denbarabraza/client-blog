@@ -14,8 +14,6 @@ import { IAuthorPage } from './types';
 const Author: FC<IAuthorPage> = ({ params: { id } }) => {
   const t = useTranslations();
 
-  console.log(id);
-
   const { name, image, review, linkedin, twitter, facebook, instagram } = useMemo(
     () => findAuthorById(Number(id)),
     [id],

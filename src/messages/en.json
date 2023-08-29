@@ -48,7 +48,7 @@
     "tagsTitle": "All tags",
     "placeholder": "Search for tag...",
     "button": "Search",
-    "message": "No such tag"
+    "message": "No tags found"
   },
   "AboutUs": {
     "title": "About us",

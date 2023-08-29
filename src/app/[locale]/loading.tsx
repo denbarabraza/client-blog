@@ -1,5 +1,7 @@
 import React from 'react';
 
+import RootLoader from '@/components/RootLoader';
+
 export default function Loader() {
-  return <h1>Loading...</h1>;
+  return <RootLoader />;
 }

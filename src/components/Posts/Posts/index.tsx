@@ -14,7 +14,7 @@ const Posts: FC<IPosts> = ({ postsTitle, posts }) => {
 
   const t = useTranslations();
 
-  const postsAtPage = 5;
+  const postsAtPage = 3;
 
   const currentPosts = posts.slice(
     currentPage * postsAtPage,

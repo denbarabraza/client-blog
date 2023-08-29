@@ -4,6 +4,7 @@
 .header {
   @include flex-between-center();
   height: $height-ss;
+  width: $width-xxl;
   background-color: $primary-color;
   color: $white-color;
   z-index: $zIndex-xxl;
