@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 
 import { socials } from '@/constants';
 
-import { IAuthorHeader } from './types';
+import { IAuthorHeader } from './interface';
 
 import styles from './styles.module.scss';
 

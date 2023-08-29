@@ -3,40 +3,40 @@
 
 .wrapper {
   @include flex-column-between();
-  width: $width-l;
-  min-height: 440px;
+  width: $width-780px;
+  min-height: $height-440px;
   margin: 0 auto;
-  padding-left: $padding-xxs;
+  padding-left: $padding-22px;
   color: $primary-color;
   border-left: 1px solid $medium-gray-color;
 
   @media (max-width: $tablet) {
-    margin-top: $margin-xs;
-    width: $width-xxl;
+    margin-top: $margin-36px;
+    width: $width-100pr;
     border-left: none;
     border-top: 1px solid $medium-gray-color;
-    padding-top: $padding-xs;
+    padding-top: $padding-30px;
     padding-left: 0;
   }
 }
 
 .review {
   @include flex-center-center;
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-ss;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-700;
   line-height: 32px;
   word-break: break-word;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xs;
-    font-weight: $fontWeight-xs;
+    font-size: $fontSize-18px;
+    font-weight: $fontWeight-500;
     line-height: 22px;
   }
 }
 
 .content {
-  width: $width-xxl;
+  width: $width-100pr;
   display: flex;
   justify-content: space-between;
 
@@ -52,13 +52,13 @@
 }
 
 .name {
-  font-size: $fontSize-ss;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-700;
   line-height: 32px;
 }
 
 .from {
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   color: $medium-gray-color;
   line-height: 28px;
 }
@@ -66,19 +66,19 @@
 .image {
   position: relative;
   overflow: hidden;
-  margin-right: $margin-xs;
-  width: 58px;
-  height: 58px;
+  margin-right: $margin-36px;
+  width: $width-55px;
+  height: $height-56px;
   border-radius: 50%;
 }
 
 .navigation {
-  width: $width-xss;
+  width: $width-110px;
   display: flex;
   justify-content: space-between;
 
   @media (max-width: $tablet) {
-    margin: $margin-xs 0;
+    margin: $margin-36px 0;
   }
 }
 
@@ -98,6 +98,6 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    opacity: $opacity-s;
+    opacity: $opacity-06;
   }
 }

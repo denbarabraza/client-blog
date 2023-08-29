@@ -3,8 +3,8 @@
 
 .wrapper {
   @include flex-between-center();
-  margin: $margin-xs 0 $margin-xs;
-  width: $width-xxl;
+  margin: $margin-36px 0 $margin-36px;
+  width: $width-100pr;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 
@@ -23,7 +23,7 @@
 
 .image {
   position: relative;
-  width: $width-xs;
+  width: $width-414px;
   aspect-ratio: 1 / 1;
 
   @media (max-width: $tablet) {
@@ -33,23 +33,23 @@
 
 .content {
   width: fit-content;
-  padding-left: $padding-xxs;
+  padding-left: $padding-22px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
   @media (max-width: $tablet) {
-    width: $width-xxl;
-    padding: $padding-xs;
+    width: $width-100pr;
+    padding: $padding-30px;
   }
 }
 
 .category {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   text-transform: uppercase;
   color: $purple-color;
-  font-size: $fontSize-xxs;
-  font-weight: $fontWeight-s;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-600;
   line-height: 20px;
   letter-spacing: 3px;
 
@@ -60,25 +60,25 @@
 }
 
 .title {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-ss;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-24px;
   line-height: 36px;
-  font-weight: $fontWeight-m;
+  font-weight: $fontWeight-700;
   color: $primary-color;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxs;
+    font-size: $fontSize-14px;
     line-height: 14px;
   }
 }
 
 .preview {
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   line-height: 28px;
   color: $medium-gray-color;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxxs;
+    font-size: $fontSize-12px;
     line-height: 12px;
   }
 }

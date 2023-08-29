@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 import { LocaleValueEnum } from '@/constants/enums';
 
-import { ICategory } from './types';
+import { ICategory } from './interface';
 
 import styles from './styles.module.scss';
 

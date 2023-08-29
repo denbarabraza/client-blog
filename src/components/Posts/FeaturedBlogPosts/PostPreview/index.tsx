@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 
 import { findAuthorById } from '@/utils/findAuthorById';
 
-import { IPostPreview } from './types';
+import { IPostPreview } from './interface';
 
 import styles from './styles.module.scss';
 

@@ -8,7 +8,7 @@ import BlogPostItem from '@/components/Posts/BlogPostItem';
 import RelatedBlogPosts from '@/components/Posts/RelatedBlogPosts';
 import posts from '@/constants/data/posts.json';
 
-import { BlogPostPageProps } from './types';
+import { BlogPostPageProps } from './interface';
 
 const BlogPost: FC<BlogPostPageProps> = ({ params: { id } }) => {
   const currentBlogPost = useMemo(

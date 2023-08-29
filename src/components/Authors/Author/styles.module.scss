@@ -3,8 +3,8 @@
 
 .wrapper {
   @include flex-column-center();
-  width: $width-xxl;
-  padding: $padding-xs 0 $padding-xs;
+  width: $width-100pr;
+  padding: $padding-30px 0 $padding-30px;
   height: fit-content;
   background-color: $gray-color;
   transition: all 0.8s;
@@ -15,23 +15,23 @@
 }
 
 .image {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   position: relative;
   overflow: hidden;
-  width: 128px;
-  height: 128px;
+  width: $width-130px;
+  height: $height-130px;
   border-radius: 50%;
   transition: all 0.5s;
 
   @media (max-width: $tablet) {
-    width: 64px;
-    height: 64px;
+    width: $width-64px;
+    height: $height-64px;
   }
 }
 
 .name {
-  font-size: $fontSize-sm;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-28px;
+  font-weight: $fontWeight-700;
   color: $primary-color;
   line-height: 40px;
   letter-spacing: -1px;
@@ -43,27 +43,27 @@
   }
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xs;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-18px;
+    font-weight: $fontWeight-600;
     line-height: 24px;
   }
 }
 
 .post {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxxs;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-14px;
   line-height: 20px;
   color: $medium-gray-color;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxxs;
+    font-size: $fontSize-12px;
     line-height: 14px;
   }
 }
 
 .socials {
   @include flex-between-center();
-  width: $width-xxs;
+  width: $width-150px;
   cursor: pointer;
 
   a {

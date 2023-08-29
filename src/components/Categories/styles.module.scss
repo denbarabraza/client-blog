@@ -2,26 +2,26 @@
 @import "styles/mixins";
 
 .wrapper {
-  margin: $margin-xs auto $margin-xs;
+  margin: $margin-36px auto $margin-36px;
 }
 
 .title {
-  margin-bottom: $margin-xxxs;
-  font-size: $fontSize-m;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-22px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
   line-height: 48px;
   letter-spacing: -2px;
   color: $primary-color;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-s;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
   }
 }
 
 .content {
   @include flex-center-center;
-  gap: 20px;
+  gap: $gap-20;
   flex-wrap: wrap;
 
   @media (max-width: $tablet) {

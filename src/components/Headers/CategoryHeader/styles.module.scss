@@ -2,34 +2,34 @@
 @import "styles/mixins";
 
 .wrapper {
-  margin-bottom: $margin-xs;
-  padding: $padding-s 0 $padding-s;
+  margin-bottom: $margin-36px;
+  padding: $padding-46px 0 $padding-46px;
   background-color: $lavender-color;
   text-align: center;
 }
 
 .title {
-  margin-bottom: $margin-xxxs;
-  font-size: $fontSize-ll;
+  margin-bottom: $margin-22px;
+  font-size: $fontSize-56px;
   color: $primary-color;
-  font-weight: $fontWeight-m;
+  font-weight: $fontWeight-700;
   line-height: 64px;
   letter-spacing: -1px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-sm;
+    font-size: $fontSize-28px;
     line-height: 32px;
   }
 }
 
 .info {
-  margin-bottom: $margin-xxxs;
-  font-size: $fontSize-xxs;
+  margin-bottom: $margin-22px;
+  font-size: $fontSize-16px;
   color: $medium-gray-color;
   line-height: 28px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxs;
+    font-size: $fontSize-14px;
     line-height: 16px;
   }
 }
@@ -37,8 +37,8 @@
 .navigation {
   @include flex-center-center();
   max-width: $width-180px;
-  font-size: $fontSize-xxs;
-  font-weight: $fontWeight-xs;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-500;
   text-transform: uppercase;
   color: $primary-color;
   line-height: 20px;
@@ -56,7 +56,7 @@
   }
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxs;
+    font-size: $fontSize-14px;
     line-height: 16px;
   }
 }

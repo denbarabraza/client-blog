@@ -4,8 +4,8 @@
 .wrapper {
   @include flex-center-center();
   flex-wrap: wrap;
-  margin: $margin-s auto;
-  gap: 20px;
+  margin: $margin-90px auto;
+  gap: $gap-20;
   color: $medium-gray-color;
 
   @media (max-width: $tablet) {
@@ -14,13 +14,13 @@
 }
 
 .label {
-  font-size: $fontSize-xxxs;
+  font-size: $fontSize-14px;
   line-height: 20px;
 }
 
 .title {
-  font-size: $fontSize-ss;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-700;
   line-height: 32px;
 }
 
@@ -33,6 +33,6 @@
   }
 
   @media (max-width: $tablet) {
-    margin: $margin-xxxs auto;
+    margin: $margin-22px auto;
   }
 }

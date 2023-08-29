@@ -3,18 +3,18 @@
 
 .wrapper {
   @include flex-between-center();
-  gap: 10px;
-  margin-top: $margin-xs;
-  width: $width-xxl;
+  gap: $gap-10;
+  margin-top: $margin-36px;
+  width: $width-100pr;
 
   @media (max-width: $tablet) {
-    margin: $margin-xxxs auto;
+    margin: $margin-22px auto;
     text-align: center;
   }
 }
 
 .image {
-  width: $width-mm;
+  width: $width-580px;
   position: relative;
   aspect-ratio: 4/3;
 
@@ -25,7 +25,7 @@
 
 .shape {
   position: relative;
-  width: 70px;
+  width: $width-70px;
   aspect-ratio: 1/1;
 
   @media (max-width: $laptop) {
@@ -34,47 +34,47 @@
 }
 
 .content {
-  width: $width-mm;
+  width: $width-580px;
   color: $primary-color;
 
   @media (max-width: $tablet) {
-    width: $width-xxl;
+    width: $width-100pr;
   }
 }
 
 .label {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-m;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
   line-height: 48px;
   letter-spacing: -2px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-ss;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-24px;
+    font-weight: $fontWeight-600;
     line-height: 32px;
   }
 }
 
 .title {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-ss;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-700;
   line-height: 32px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xs;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-18px;
+    font-weight: $fontWeight-600;
     line-height: 22px;
   }
 }
 
 .text {
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   line-height: 28px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxxs;
+    font-size: $fontSize-12px;
     line-height: 14px;
   }
 }

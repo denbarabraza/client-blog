@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 
 import { LocaleValueEnum } from '@/constants/enums';
 
-import { ICategoryHeader } from './types';
+import { ICategoryHeader } from './interface';
 
 import styles from './styles.module.scss';
 

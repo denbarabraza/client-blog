@@ -2,16 +2,16 @@
 @import "styles/mixins";
 
 .wrapper {
-  margin-bottom: $margin-xs;
-  width: $width-xxl;
-  padding: $padding-xs 0 $padding-xs;
+  margin-bottom: $margin-36px;
+  width: $width-100pr;
+  padding: $padding-30px 0 $padding-30px;
   background-color: $lavender-color;
 }
 
 .header {
   @include flex-between-center();
   margin: 0 auto;
-  width: $width-ll;
+  width: $width-1280px;
 
   @media (max-width: $tablet) {
     text-align: center;
@@ -20,7 +20,7 @@
 }
 
 .post {
-  width: $width-mm;
+  width: $width-580px;
 
   @media (max-width: $tablet) {
     width: fit-content;
@@ -29,23 +29,23 @@
 
 .label {
   text-transform: uppercase;
-  font-size: $fontSize-xxs;
-  font-weight: $fontWeight-xs;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-500;
   letter-spacing: 3px;
   color: $primary-color;
 }
 
 .title {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-m;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
   color: $primary-color;
 }
 
 .info {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxxs;
-  font-weight: $fontWeight-xs;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-14px;
+  font-weight: $fontWeight-500;
   color: $dark-gray-color;
 
   a {
@@ -60,20 +60,20 @@
 }
 
 .preview {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxs;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
   color: $medium-gray-color;
 }
 
 .button {
-  width: 204px;
-  height: 56px;
+  width: $width-200px;
+  height: $height-56px;
   background: $yellow-color;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: $fontWeight-m;
-  font-size: $fontSize-xs;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-18px;
   color: $primary-color;
   transition: transform 250ms;
   cursor: pointer;
@@ -90,8 +90,8 @@
 
 .image {
   position: relative;
-  width: 40%;
-  max-width: 515px;
+  width: $width-40pr;
+  max-width: $width-515px;
   aspect-ratio: 3 / 2;
 
   @media (max-width: $tablet) {

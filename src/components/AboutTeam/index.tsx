@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import { TextInAboutTeamEnum } from '@/constants/enums';
 
-import { IAboutTeam } from './types';
+import { IAboutTeam } from './interface';
 
 import styles from './styles.module.scss';
 

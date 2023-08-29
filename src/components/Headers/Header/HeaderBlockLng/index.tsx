@@ -3,7 +3,7 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
 
-import { IHeaderBase } from './types';
+import { IHeaderBase } from './interface';
 
 import styles from './styles.module.scss';
 

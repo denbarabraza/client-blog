@@ -13,34 +13,34 @@
 }
 
 .title {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-m;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
   line-height: 48px;
   letter-spacing: -2px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-ss;
+    font-size: $fontSize-24px;
     line-height: 36px;
   }
 }
 
 .posts {
   @include flex-between-start();
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
 
   @media (max-width: $tablet) {
     @include flex-column-center();
-    margin: 0 auto $margin-s;
+    margin: 0 auto $margin-90px;
   }
 }
 
 .message {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-s;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-22px;
   color: $dark-yellow-color;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xs;
+    font-size: $fontSize-18px;
   }
 }

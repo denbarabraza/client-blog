@@ -4,10 +4,10 @@ import React, { FC, useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 
 import NavMenu from '@/components/NavMenu';
-import { HeaderTypeEnum } from '@/components/NavMenu/types';
+import { HeaderTypeEnum } from '@/constants/enums';
 
 import HeaderBlockLng from './HeaderBlockLng';
-import { IHeader } from './types';
+import { IHeader } from './interface';
 
 import styles from './styles.module.scss';
 

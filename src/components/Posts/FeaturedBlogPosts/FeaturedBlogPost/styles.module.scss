@@ -2,10 +2,10 @@
 @import "styles/mixins";
 
 .wrapper {
-  margin-top: $margin-xs;
-  margin-right: $margin-xs;
+  margin-top: $margin-36px;
+  margin-right: $margin-36px;
   border: 1px solid $gray-color;
-  padding: $padding-xxs;
+  padding: $padding-22px;
 
   @media (max-width: $tablet) {
     margin-right: 0;
@@ -13,7 +13,7 @@
 }
 
 .image {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   position: relative;
   margin: 0 auto;
 
@@ -21,10 +21,10 @@
 }
 
 .info {
-  margin-top: $margin-xs;
-  margin-bottom: $margin-xxxs;
-  font-size: $fontSize-xxxs;
-  font-weight: $fontWeight-xs;
+  margin-top: $margin-36px;
+  margin-bottom: $margin-22px;
+  font-size: $fontSize-14px;
+  font-weight: $fontWeight-500;
   color: $medium-gray-color;
 
   a {
@@ -38,47 +38,47 @@
   }
 
   @media (max-width: $mobile) {
-    font-size: $fontSize-xxxxs;
+    font-size: $fontSize-12px;
     line-height: 16px;
   }
 }
 
 .title {
-  margin-bottom: $margin-xxxs;
+  margin-bottom: $margin-22px;
   display: block;
-  font-size: $fontSize-sm;
+  font-size: $fontSize-28px;
   color: $primary-color;
-  font-weight: $fontWeight-m;
+  font-weight: $fontWeight-700;
   line-height: 40px;
   letter-spacing: -1px;
 
   @media (max-width: $mobile) {
-    font-size: $fontSize-s;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
     line-height: 32px;
   }
 }
 
 .preview {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxs;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
   color: $medium-gray-color;
   line-height: 28px;
 
   @media (max-width: $mobile) {
-    font-size: $fontSize-xxxxs;
+    font-size: $fontSize-12px;
     line-height: 16px;
   }
 }
 
 .button {
   @include flex-center-center();
-  margin-top: $margin-xs;
-  width: $width-xxs;
-  height: $height-s;
+  margin-top: $margin-36px;
+  width: $width-150px;
+  height: $height-56px;
   background: $yellow-color;
-  font-size: $fontSize-xs;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-18px;
+  font-weight: $fontWeight-700;
   line-height: 24px;
   color: $primary-color;
   transition: transform 250ms;

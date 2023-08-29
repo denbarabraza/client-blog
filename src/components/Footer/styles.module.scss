@@ -2,13 +2,13 @@
 @import "styles/mixins";
 
 .footer {
-  width: $width-xxl;
-  min-height:300px;
-  padding: $padding-xs 0 $padding-xs;
+  width: $width-100pr;
+  min-height: $height-300px;
+  padding: $padding-30px 0 $padding-30px;
   background-color: $primary-color;
 
   @media (max-width: $tablet) {
-    padding: $padding-xs;
+    padding: $padding-30px;
   }
 }
 
@@ -18,7 +18,7 @@
 
 .navbar {
   @include flex-between-center();
-  width: $width-xxl;
+  width: $width-100pr;
 
   @media (max-width: $mobile) {
     justify-content: center;
@@ -26,30 +26,30 @@
 }
 
 .title {
-  font-size: $fontSize-ss;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-700;
   color: $white-color;
   width: $width-50pr;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xs;
+    font-size: $fontSize-18px;
     line-height: 22px;
-    width: $width-xxl;
+    width: $width-100pr;
   }
 }
 
 .links {
-  width: $width-m;
+  width: $width-700px;
 
   @media (max-width: $laptop) {
     @include flex-column-center();
-    width: $width-xxl;
+    width: $width-100pr;
   }
 }
 
 .contacts {
   @include flex-between-center();
-  width: $width-xxl;
+  width: $width-100pr;
   color: $white-color;
 
   p {
@@ -71,21 +71,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
-  height: 100%;
-  font-size: $fontSize-xxs;
+  width: $width-100pr;
+  height: $height-100pr;
+  font-size: $fontSize-16px;
   line-height: 28px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxxs;
+    font-size: $fontSize-12px;
     line-height: 16px;
   }
 }
 
 .icons {
   @include flex-between-center();
-  width: $width-xxs;
-  max-width: $width-xxs;
+  width: $width-150px;
+  max-width: $width-150px;
   cursor: pointer;
 
   a {
@@ -97,6 +97,6 @@
   }
 
   @media (max-width: $mobile) {
-    margin-top: $margin-xs;
+    margin-top: $margin-36px;
   }
 }

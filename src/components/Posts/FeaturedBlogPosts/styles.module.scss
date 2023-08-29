@@ -5,7 +5,7 @@
   @include flex-between-center();
   @include blockAnimation();
   margin: 0 auto;
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
 
   @media (max-width: $tablet) {
     @include flex-column-center();
@@ -14,18 +14,18 @@
 
 .preview {
   @include flex-column-between();
-  gap: 20px;
+  gap: $gap-20;
 }
 
 .content {
   @media (max-width: $tablet) {
-    margin-bottom: $margin-xs;
+    margin-bottom: $margin-36px;
   }
 }
 
 .header {
   @include flex-between-center();
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
 
   a {
     color: $dark-yellow-color;
@@ -49,8 +49,8 @@
 }
 
 .title {
-  font-size: $fontSize-m;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
   color: $primary-color;
   line-height: 48px;
   letter-spacing: -2px;
@@ -58,8 +58,8 @@
   @media (max-width: $tablet) {
     margin: 0 auto;
     text-align: center;
-    font-size: $fontSize-s;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
     color: $primary-color;
     line-height: 24px;
   }

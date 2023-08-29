@@ -1,7 +1,7 @@
 @import "styles/variables";
 
 .wrapper {
-  width: $width-xxl;
+  width: $width-100pr;
   color: $primary-color;
 
   @media (max-width: $tablet) {
@@ -11,8 +11,8 @@
 }
 
 .header {
-  width: $width-xxl;
-  height: 256px;
+  width: $width-100pr;
+  height: $height-256px;
   background-color: $lavender-color;
   display: flex;
   flex-direction: column;
@@ -22,49 +22,49 @@
 }
 
 .title {
-  font-size: $fontSize-l;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-48px;
+  font-weight: $fontWeight-700;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-s;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
   }
 }
 
 .lastUpdate {
-  margin-top: $margin-xxxs;
-  font-size: $fontSize-xxs;
-  opacity: $opacity-s;
+  margin-top: $margin-22px;
+  font-size: $fontSize-16px;
+  opacity: $opacity-06;
 }
 
 .content {
-  padding: $padding-s 0 $padding-s;
+  padding: $padding-46px 0 $padding-46px;
 }
 
 .article {
-  max-width: 768px;
+  max-width: $width-770px;
   margin: 0 auto;
 
   @media (max-width: $tablet) {
-    padding: $padding-s;
+    padding: $padding-46px;
   }
 }
 
 .articleTitle {
-  margin-bottom: $margin-xs;
-  font-weight: $fontWeight-m;
-  font-size: $fontSize-m;
+  margin-bottom: $margin-36px;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-36px;
 }
 
 .articleSubtitle {
-  margin-bottom: $margin-xs;
-  font-weight: $fontWeight-m;
-  font-size: $fontSize-sm;
+  margin-bottom: $margin-36px;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-28px;
 }
 
 .articleText {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxs;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
   line-height: 28px;
   text-align: justify;
 }

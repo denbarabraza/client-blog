@@ -2,16 +2,16 @@
 @import "styles/mixins";
 
 .wrapper {
-  width: $width-xxl;
+  width: $width-100pr;
   background-color: $blue-gray-color;
-  margin: $margin-xs 0 $margin-xs;
-  padding: $padding-xs 0 $padding-xs;
+  margin: $margin-36px 0 $margin-36px;
+  padding: $padding-30px 0 $padding-30px;
 }
 
 .form {
   @include flex-between-center();
   margin: 0 auto;
-  padding: $padding-s;
+  padding: $padding-46px;
 
   @media (max-width: $laptop) {
     flex-direction: column;
@@ -19,29 +19,29 @@
   }
 
   @media (max-width: $mobile) {
-    width: $width-xxl;
+    width: $width-100pr;
   }
 }
 
 .title {
-  width: $width-s;
-  padding-left: $padding-xxs;
-  font-size: $fontSize-m;
-  font-weight: $fontWeight-m;
+  width: $width-470px;
+  padding-left: $padding-22px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
   color: $white-color;
 
   @media (max-width: $tablet) {
     margin: 0 auto;
     text-align: center;
-    font-size: $fontSize-s;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
   }
 
   @media (max-width: $laptop) {
-    margin: $margin-xs 0 $margin-xs;
+    margin: $margin-36px 0 $margin-36px;
     width: fit-content;
-    font-size: $fontSize-s;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
   }
 }
 
@@ -50,7 +50,7 @@
   justify-content: space-evenly;
 
   @media (max-width: $mobile) {
-    width: $width-xxl;
+    width: $width-100pr;
     flex-direction: column;
     height: 200px;
   }
@@ -64,7 +64,7 @@
   @media (max-width: $tablet) {
     margin: 0 auto;
     width: 200px;
-    max-width: $width-xxl;
+    max-width: $width-100pr;
   }
 
   @media (max-width: $mobile) {
@@ -73,11 +73,11 @@
 }
 
 .input {
-  width: $width-xxl;
-  height: $height-s;
+  width: $width-100pr;
+  height: $height-56px;
   background: transparent;
   padding: 0 $padding-10xp;
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   border: 1px solid $white-color;
   color: $white-color;
 
@@ -93,10 +93,10 @@
 
 .button {
   width: 180px;
-  height: $height-s;
+  height: $height-56px;
   background-color: $yellow-color;
-  font-size: $fontSize-xs;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-18px;
+  font-weight: $fontWeight-700;
   color: $primary-color;
   border: none;
   cursor: pointer;
@@ -109,7 +109,7 @@
   @media (max-width: $tablet) {
     margin: 0 auto;
     width: 200px;
-    max-width: $width-xxl;
+    max-width: $width-100pr;
   }
 }
 
@@ -121,15 +121,15 @@
   height: fit-content;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: $padding-20xp;
   background-color: $dark-yellow-color;
   color: $beige-color;
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
 
-  z-index: $zIndex-l;
+  z-index: $zIndex-1000;
 }
 
 .errorMessage {

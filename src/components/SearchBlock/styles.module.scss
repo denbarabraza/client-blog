@@ -2,43 +2,43 @@
 @import "styles/mixins";
 
 .wrapper {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   width: $width-250px;
   height: fit-content;
 
   @media (max-width: $tablet) {
-    width: $width-xxl;
+    width: $width-100pr;
   }
 }
 
 .title {
   text-align: center;
-  margin-bottom: $margin-xxxs;
-  font-size: 32px;
+  margin-bottom: $margin-22px;
+  font-size: $fontSize-32px;
   color: $primary-color;
-  font-weight: $fontWeight-m;
+  font-weight: $fontWeight-700;
   line-height: 42px;
   letter-spacing: -2px;
 }
 
 .tagWrapper {
   @include flex-center-center;
-  width: $width-xxl;
+  width: $width-100pr;
   flex-wrap: wrap;
 }
 
 .tag {
   @include flex-center-center();
-  margin-bottom: $margin-xxxs;
-  margin-left: $margin-xxxs;
+  margin-bottom: $margin-22px;
+  margin-left: $margin-22px;
   padding: $padding-16xp;
-  height: 32px;
+  height: $height-30px;
   width: fit-content;
   border: 2px solid $medium-gray-color;
   border-radius: 32px;
   color: $medium-gray-color;
-  font-size: $fontSize-xxxs;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-14px;
+  font-weight: $fontWeight-700;
   cursor: pointer;
 
   &:hover {

@@ -2,8 +2,8 @@
 @import "styles/mixins";
 
 .wrapper {
-  width: $width-xxl;
-  margin: $margin-xs 0 $margin-xs;
+  width: $width-100pr;
+  margin: $margin-36px 0 $margin-36px;
 }
 
 .form {
@@ -19,19 +19,19 @@
 .inputWrapper {
   position: relative;
   width: $width-50pr;
-  min-width: 200px;
+  min-width: $width-200px;
 
   @media (max-width: $tablet) {
-    min-width: 150px;
+    min-width: $width-150px;
   }
 }
 
 .input {
-  width: $width-xxl;
-  height: $height-s;
+  width: $width-100pr;
+  height: $height-56px;
   background: transparent;
-  padding: $padding-xxs;
-  font-size: $fontSize-xxs;
+  padding: $padding-22px;
+  font-size: $fontSize-16px;
   border: 1px solid $dark-gray-color;
   color: $dark-gray-color;
   border-radius: 10px;
@@ -46,11 +46,11 @@
 }
 
 .textarea {
-  width: $width-xxl;
-  min-height: $height-m;
+  width: $width-100pr;
+  min-height: $height-144px;
   background: transparent;
-  padding: $padding-xxs;
-  font-size: $fontSize-xxs;
+  padding: $padding-22px;
+  font-size: $fontSize-16px;
   border: 1px solid $dark-gray-color;
   color: $dark-gray-color;
   border-radius: 10px;
@@ -67,11 +67,11 @@
 }
 
 .select {
-  width: $width-xxl;
-  height: $height-s;
+  width: $width-100pr;
+  height: $height-56px;
   background: transparent;
   padding: $padding-10xp;
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   border: 1px solid $dark-gray-color;
   color: $dark-gray-color;
   border-radius: 10px;
@@ -82,11 +82,11 @@
 }
 
 .button {
-  width: $width-xxl;
-  height: $height-s;
+  width: $width-100pr;
+  height: $height-56px;
   background-color: $yellow-color;
-  font-size: $fontSize-xs;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-18px;
+  font-weight: $fontWeight-700;
   color: $primary-color;
   border: none;
   cursor: pointer;
@@ -107,15 +107,15 @@
   height: fit-content;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: $padding-20xp;
   background-color: $dark-yellow-color;
   color: $beige-color;
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
 
-  z-index: $zIndex-l;
+  z-index: $zIndex-1000;
 }
 
 .errorMessage {

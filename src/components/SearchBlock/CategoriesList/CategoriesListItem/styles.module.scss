@@ -3,10 +3,10 @@
 
 .category {
   @include flex-center-center;
-  margin-bottom: $margin-xxxs;
-  padding: $padding-xxs;
-  width: $width-xxl;
-  height: $height-ss;
+  margin-bottom: $margin-22px;
+  padding: $padding-22px;
+  width: $width-100pr;
+  height: $height-76px;
   border: 1px solid $gray-color;
   transition: all 0.8s;
   cursor: pointer;
@@ -17,7 +17,7 @@
   }
 
   @media (max-width: $tablet) {
-    height: 72px;
+    height: $height-70px;
   }
 }
 
@@ -27,29 +27,29 @@
 }
 
 .image {
-  margin-right: $margin-xs;
+  margin-right: $margin-36px;
   position: relative;
   background-color: $beige-color;
-  width: 48px;
-  height: 48px;
+  width: $width-50px;
+  height: $height-50px;
   border-radius: 10px;
 
   @media (max-width: $tablet) {
-    width: 28px;
-    height: 28px;
+    width: $width-25px;
+    height: $height-25px;
   }
 }
 
 .title {
   width: $width-70pr;
-  font-size: $fontSize-ss;
-  font-weight: $fontWeight-s;
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-600;
   color: $primary-color;
   line-height: 32px;
   letter-spacing: -1px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-s;
+    font-size: $fontSize-22px;
     line-height: 26px;
   }
 }

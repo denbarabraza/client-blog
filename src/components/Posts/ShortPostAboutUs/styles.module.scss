@@ -4,11 +4,11 @@
 .wrapper {
   @include blockAnimation();
   position: relative;
-  width: $width-ll;
-  margin: $margin-xs auto $margin-xs;
+  width: $width-1280px;
+  margin: $margin-36px auto $margin-36px;
 
   @media (max-width: 1240px) {
-    margin: $margin-xxxs auto;
+    margin: $margin-22px auto;
     width: fit-content;
     text-align: center;
   }
@@ -16,9 +16,9 @@
 
 .image {
   position: relative;
-  width: $width-ml;
+  width: $width-1024px;
   height: 700px;
-  background: url('/assets/images/aboutUsSmall.png') 0 $width-xxl;
+  background: url('/assets/images/aboutUsSmall.png') 0 $width-100pr;
   background-size: cover;
 
   @media (max-width: $laptop) {
@@ -33,27 +33,27 @@
   @include flex-column-center;
   justify-content: center;
   position: absolute;
-  width: $width-l;
-  padding: $padding-xs;
-  top: $height-m;
+  width: $width-780px;
+  padding: $padding-30px;
+  top: $height-144px;
   right: 0;
   background-color: $white-color;
-  height: calc(100% - $height-m);
+  height: calc(100% - $height-144px);
   color: $primary-color;
 
 
   @media (max-width: $laptop) {
     position: static;
-    top: $height-s;
-    height: calc(100% - $height-s);
+    top: $height-56px;
+    height: calc(100% - $height-56px);
     width: fit-content;
   }
 }
 
 .label {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxs;
-  font-weight: $fontWeight-s;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-600;
   color: $primary-color;
   line-height: 20px;
   letter-spacing: 3px;
@@ -61,21 +61,21 @@
 }
 
 .title {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-l;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-48px;
+  font-weight: $fontWeight-700;
   line-height: 64px;
   letter-spacing: -2px;
 
   @media (max-width: $laptop) {
-    font-size: $fontSize-s;
+    font-size: $fontSize-22px;
     line-height: 24px;
   }
 }
 
 .text {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxs;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
   line-height: 28px;
   color: $medium-gray-color;
   word-break: break-word;
@@ -83,12 +83,12 @@
 
 .button {
   @include flex-center-center();
-  margin-top: $margin-xs;
+  margin-top: $margin-36px;
   width: 269px;
-  height: $height-s;
+  height: $height-56px;
   background: $yellow-color;
-  font-size: $fontSize-xs;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-18px;
+  font-weight: $fontWeight-700;
   line-height: 24px;
   color: $primary-color;
   transition: transform 250ms;
@@ -100,6 +100,6 @@
   }
 
   @media (max-width: $laptop) {
-    margin: $margin-xxxs auto;
+    margin: $margin-22px auto;
   }
 }

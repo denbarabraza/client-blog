@@ -5,7 +5,7 @@ import authors from '@/constants/data/authors.json';
 import { AuthorsInPageEnum } from '@/constants/enums';
 
 import Author from './Author';
-import { IAuthors } from './types';
+import { IAuthors } from './interface';
 
 import styles from './styles.module.scss';
 

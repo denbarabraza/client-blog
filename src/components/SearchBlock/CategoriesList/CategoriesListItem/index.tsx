@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 
 import { LocaleValueEnum } from '@/constants/enums';
 
-import { ICategoriesListItem } from './types';
+import { ICategoriesListItem } from './interface';
 
 import styles from './styles.module.scss';
 

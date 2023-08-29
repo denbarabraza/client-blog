@@ -3,11 +3,11 @@
 
 .header {
   @include flex-between-center();
-  height: $height-ss;
-  width: $width-xxl;
+  height: $height-76px;
+  width: $width-100pr;
   background-color: $primary-color;
   color: $white-color;
-  z-index: $zIndex-xxl;
+  z-index: $zIndex-3000;
 
   @media (max-width: $tablet) {
     height: fit-content;
@@ -16,14 +16,14 @@
 
 .wrapper {
   margin: 0 auto;
-  padding: 0 $padding-s;
-  width: $width-xxl;
+  padding: 0 $padding-46px;
+  width: $width-100pr;
 }
 
 .navbar {
   @include flex-between-center();
-  width: $width-xxl;
-  gap: 70px;
+  width: $width-100pr;
+  gap: $gap-70;
 
   @media (max-width: $tablet) {
     flex-direction: column;
@@ -32,25 +32,25 @@
 }
 
 .title {
-  font-size: $fontSize-s;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-22px;
+  font-weight: $fontWeight-700;
   color: $white-color;
 
   @media (max-width: 780px) {
-    font-size: $fontSize-xs;
+    font-size: $fontSize-18px;
   }
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-s;
-    margin-top: $margin-xs;
+    font-size: $fontSize-22px;
+    margin-top: $margin-36px;
   }
 }
 
 .links {
   @include flex-between-center();
-  width: $width-m;
+  width: $width-700px;
 
   @media (max-width: $tablet) {
-    width: $width-xxs;
+    width: $width-150px;
   }
 }

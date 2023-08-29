@@ -2,7 +2,7 @@
 @import "styles/mixins";
 
 .wrapper {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   position: relative;
   display: flex;
   width: $width-250px;
@@ -14,12 +14,12 @@
 }
 
 .input {
-  width: $width-xxl;
+  width: $width-100pr;
   padding: $padding-16xp;
   border: 1px solid $medium-gray-color;
   border-radius: 5px;
   border-right: none;
-  font-size: $fontSize-xs;
+  font-size: $fontSize-18px;
   color: $primary-color;
 
   &::placeholder {
@@ -35,9 +35,9 @@
 .button {
   width: $width-70px;
   background-color: $yellow-color;
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   color: $primary-color;
-  font-weight: $fontWeight-m;
+  font-weight: $fontWeight-700;
   line-height: 24px;
   border-radius: 6px;
   border: none;
@@ -52,7 +52,7 @@
 
 .list {
   width: $width-250px;
-  max-height: $height-m;
+  max-height: $height-144px;
   position: absolute;
   top: 60px;
   background-color: $white-color;
@@ -60,7 +60,7 @@
   border: 1px solid $dark-yellow-color;
   border-radius: 5px;
 
-  z-index: $zIndex-l;
+  z-index: $zIndex-1000;
 
   &::-webkit-scrollbar {
     display: none;
@@ -68,9 +68,9 @@
 }
 
 .item {
-  width: $width-xxl;
+  width: $width-100pr;
   padding: $padding-10xp;
-  font-size: $fontSize-xs;
+  font-size: $fontSize-18px;
   color: $primary-color;
   cursor: pointer;
   transition: all 0.8s;

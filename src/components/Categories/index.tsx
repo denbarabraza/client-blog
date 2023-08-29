@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Category from '@/components/Categories/Category';
 import categories from '@/constants/data/categories.json';
 
-import { ICategories } from './types';
+import { ICategories } from './interface';
 
 import styles from './styles.module.scss';
 

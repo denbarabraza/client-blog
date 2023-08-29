@@ -6,8 +6,8 @@ import { useTranslations } from 'next-intl';
 import { IFooter } from '@/components/Footer/interface';
 import LayoutWrapper from '@/components/LayoutWrapper';
 import NavMenu from '@/components/NavMenu';
-import { HeaderTypeEnum } from '@/components/NavMenu/types';
 import { socials } from '@/constants';
+import { HeaderTypeEnum } from '@/constants/enums';
 
 import Newsletter from './Newsletter';
 

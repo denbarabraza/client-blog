@@ -3,18 +3,18 @@
 
 .wrapper {
   margin: 0 auto;
-  margin-bottom: $margin-s;
-  padding: $padding-xs 0 $padding-xs;
+  margin-bottom: $margin-90px;
+  padding: $padding-30px 0 $padding-30px;
   background-color: $beige-color;
 
   @media (max-width: $tablet) {
-    padding: $padding-xs;
+    padding: $padding-30px;
   }
 }
 
 .content {
   @include flex-between-center();
-  width: 90%;
+  width: $width-90pr;
   margin: 0 auto;
 
   @media (max-width: $tablet) {
@@ -25,48 +25,48 @@
 }
 
 .testimonials {
-  padding-right: $padding-xs;
-  width: $width-s;
+  padding-right: $padding-30px;
+  width: $width-470px;
   color: $primary-color;
 
   @media (max-width: $tablet) {
-    width: $width-xxl;
+    width: $width-100pr;
   }
 }
 
 .label {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxs;
-  font-weight: $fontWeight-s;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-600;
   text-transform: uppercase;
   line-height: 20px;
   letter-spacing: 3px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxs;
+    font-size: $fontSize-14px;
     line-height: 16px;
   }
 }
 
 .title {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-m;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
   line-height: 48px;
   letter-spacing: -2px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-ss;
+    font-size: $fontSize-24px;
     line-height: 26px;
   }
 }
 
 .text {
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   line-height: 28px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxs;
+    font-size: $fontSize-14px;
     line-height: 16px;
   }
 }

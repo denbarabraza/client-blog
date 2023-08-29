@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: $height-100pr;
 }
 
 .main {
@@ -12,26 +12,26 @@
 }
 
 .wrapper {
-  width: $width-xxl;
+  width: $width-100pr;
 }
 
 .errorMessage {
-  margin-top: $margin-xs;
+  margin-top: $margin-36px;
   text-align: center;
-  font-size: $fontSize-m;
+  font-size: $fontSize-36px;
   color: $purple-color;
 }
 
 .button {
-  margin: $margin-xs auto;
-  width: 174px;
-  height: 56px;
+  margin: $margin-36px auto;
+  width: $width-180px;
+  height: $height-56px;
   background-color: $yellow-color;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: $fontWeight-m;
-  font-size: $fontSize-xs;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-18px;
   line-height: 24px;
   color: $primary-color;
   transition: all 0.8s;

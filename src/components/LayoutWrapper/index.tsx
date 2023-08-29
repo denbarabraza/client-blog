@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { ILayoutWrapper } from './types';
+import { ILayoutWrapper } from './interface';
 
 import styles from './styles.module.scss';
 

@@ -3,7 +3,7 @@
 
 .wrapper {
   width: $width-80vw;
-  margin: $margin-s auto $margin-xs;
+  margin: $margin-90px auto $margin-36px;
 
   @media (max-width: $tablet) {
     width: fit-content;
@@ -11,8 +11,8 @@
 }
 
 .heading {
-  margin-bottom: $margin-xs;
-  width: $width-xxl;
+  margin-bottom: $margin-36px;
+  width: $width-100pr;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,24 +20,24 @@
 }
 
 .title {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   text-transform: uppercase;
-  font-size: $fontSize-xxs;
-  font-weight: $fontWeight-l;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-900;
   letter-spacing: 3px;
 }
 
 .subtitle {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-l;
-  font-weight: $fontWeight-m;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-48px;
+  font-weight: $fontWeight-700;
   line-height: 64px;
   letter-spacing: -2px;
   text-align: center;
 }
 
 .text {
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   line-height: 28px;
   color: $medium-gray-color;
   text-align: center;
@@ -45,13 +45,13 @@
 
 .info {
   width: $width-70pr;
-  padding: $padding-xs 0 $padding-xs;
+  padding: $padding-30px 0 $padding-30px;
   background-color: $purple-color;
 }
 
 .infoWrapper {
   @include flex-between-start;
-  gap: 20px;
+  gap: $gap-20;
 
 
   @media (max-width: $tablet) {
@@ -70,27 +70,27 @@
 
 .infoBlockTitle {
   text-align: center;
-  margin-bottom: $margin-xxxs;
+  margin-bottom: $margin-22px;
   padding-bottom: $padding-10xp;
-  font-size: $fontSize-s;
+  font-size: $fontSize-22px;
   color: $primary-color;
-  width: $width-xxl;
+  width: $width-100pr;
 
   border-bottom: 1px solid $gray-color;
 }
 
 .infoBlockText {
-  width: $width-xxl;
+  width: $width-100pr;
   padding-bottom: $padding-10xp;
-  font-size: $fontSize-xs;
-  font-weight: $fontWeight-xs;
+  font-size: $fontSize-18px;
+  font-weight: $fontWeight-500;
   line-height: 32px;
   color: $white-color;
 }
 
 .infoBlockNote {
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   color: $gray-color;
-  opacity: $opacity-s;
+  opacity: $opacity-06;
   line-height: 28px;
 }

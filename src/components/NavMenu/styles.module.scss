@@ -3,9 +3,9 @@
 
 .navMenu {
   @include flex-between-center();
-  width: $width-xxl;
-  gap: 30px;
-  height: $height-xxl;
+  width: $width-100pr;
+  gap: $gap-30;
+  height: $height-100pr;
 
   a {
     color: $white-color;
@@ -49,18 +49,18 @@
 }
 
 .linkItem{
-  max-width: $width-xss;
+  max-width: $width-110px;
 }
 
 .button {
   @include flex-center-center;
-  width: $width-xxs;
+  width: $width-150px;
   height: fit-content;
   background-color: $white-color;
   padding: $padding-10xp $padding-12xp;
-  margin-left: $margin-xxxs;
-  font-size: $fontSize-xxs;
-  font-weight: $fontWeight-xs;
+  margin-left: $margin-22px;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-500;
   color: $primary-color;
   border: none;
   cursor: pointer;
@@ -71,26 +71,24 @@
   }
 
   @media (max-width: $tablet) {
-    margin-bottom: $margin-xs;
-    margin: 0 auto;
-    margin-bottom: $margin-xs;
-    width: $width-xxs;
+    margin: 0 auto $margin-36px;
+    width: $width-150px;
     height: 30px;
-    font-size: $fontSize-xxxs;
+    font-size: $fontSize-14px;
   }
 }
 
 .video_wrapper {
   @include flex-center-center();
   position: fixed;
-  width: 50vw;
-  height: 50vh;
+  width: $width-50vw;
+  height: $height-50vh;
   left: 0;
   bottom: 0;
   background-color: $translusent-color;
   backdrop-filter: blur(4px);
-  z-index: $zIndex-xl;
-  opacity: $opacity-l;
+  z-index: $zIndex-2000;
+  opacity: $opacity-1;
 }
 
 .video {

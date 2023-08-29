@@ -1,9 +1,9 @@
 @import "styles/variables";
 
 .category {
-  width: 296px;
+  width: $width-300px;
   border: 1px solid $gray-color;
-  padding: $padding-xs;
+  padding: $padding-30px;
   transition: all 0.8s;
   cursor: pointer;
 
@@ -12,35 +12,35 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 20px;
+    padding: $padding-20xp;
     text-align: center;
   }
 }
 
 .image {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: $width-50px;
+  height: $height-50px;
   background-color: $beige-color;
   border-radius: 10px;
 
   @media (max-width: $tablet) {
-    margin: $margin-xxxs auto;
+    margin: $margin-22px auto;
   }
 }
 
 .title {
-  margin-bottom: $margin-xs;
-  font-weight: $fontWeight-m;
-  font-size: $fontSize-sm;
+  margin-bottom: $margin-36px;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-28px;
   line-height: 40px;
   letter-spacing: -1px;
   color: $primary-color;
 }
 
 .info {
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   line-height: 28px;
   color: $medium-gray-color;
 }

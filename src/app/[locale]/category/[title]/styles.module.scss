@@ -19,7 +19,7 @@
 }
 
 .posts {
-  width: $width-ml;
+  width: $width-1024px;
 
   @media (max-width: $tablet) {
     width: fit-content;

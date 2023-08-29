@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 
 import { MissionVisionTypeEnum } from '@/constants/enums';
 
-import { IMissionVision } from './types';
+import { IMissionVision } from './interface';
 
 import styles from './styles.module.scss';
 

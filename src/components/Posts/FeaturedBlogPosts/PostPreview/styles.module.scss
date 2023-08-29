@@ -2,10 +2,10 @@
 @import "styles/mixins";
 
 .wrapper {
-  padding: $padding-xs;
+  padding: $padding-30px;
   transition: all 0.4s;
   border: 1px solid $gray-color;
-  width: $width-xxl;
+  width: $width-100pr;
 
   &:hover {
     background-color: $dark-yellow-color;
@@ -16,9 +16,9 @@
 }
 
 .info {
-  margin-bottom: $margin-xxxs;
-  font-size: $fontSize-xxxs;
-  font-weight: $fontWeight-xs;
+  margin-bottom: $margin-22px;
+  font-size: $fontSize-14px;
+  font-weight: $fontWeight-500;
   color: $medium-gray-color;
 
   a {
@@ -33,15 +33,15 @@
   }
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxxs;
+    font-size: $fontSize-12px;
     line-height: 14px;
   }
 }
 
 .title {
   display: block;
-  font-size: $fontSize-ss;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-700;
   color: $primary-color;
   line-height: 32px;
   transition: all 0.2s ease-in-out;
@@ -51,8 +51,8 @@
   }
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xs;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-18px;
+    font-weight: $fontWeight-600;
     line-height: 24px;
   }
 }

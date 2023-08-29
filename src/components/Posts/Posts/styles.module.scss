@@ -2,14 +2,14 @@
 @import "styles/mixins";
 
 .message {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   text-align: center;
-  font-size: $fontSize-s;
+  font-size: $fontSize-22px;
   color: $dark-gray-color;
 }
 
 .wrapper {
-  margin: 0 $margin-xs $margin-xs auto;
+  margin: 0 $margin-36px $margin-36px auto;
 
   @media (max-width: $tablet) {
     width: fit-content;
@@ -19,9 +19,9 @@
 }
 
 .title {
-  padding-bottom: $padding-xs;
-  font-size: $fontSize-l;
-  font-weight: $fontWeight-m;
+  padding-bottom: $padding-30px;
+  font-size: $fontSize-48px;
+  font-weight: $fontWeight-700;
   line-height: 64px;
   letter-spacing: -2px;
   color: $primary-color;
@@ -29,8 +29,8 @@
 
   @media (max-width: $tablet) {
     margin: 0 auto;
-    font-size: $fontSize-m;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-36px;
+    font-weight: $fontWeight-600;
     line-height: 42px;
   }
 }
@@ -43,8 +43,8 @@
 }
 
 .button {
-  font-size: $fontSize-ss;
-  font-weight: $fontWeight-xs;
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-500;
   letter-spacing: -1px;
   color: $primary-color;
   border: none;
@@ -58,13 +58,13 @@
   }
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxs;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-16px;
+    font-weight: $fontWeight-600;
   }
 }
 
 .disabled {
-  font-size: $fontSize-ss;
+  font-size: $fontSize-24px;
   line-height: 32px;
   letter-spacing: 0;
   color: $medium-gray-color;

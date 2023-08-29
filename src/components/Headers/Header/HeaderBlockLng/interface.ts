@@ -1,6 +1,6 @@
 import { LocaleValueEnum } from '@/constants/enums';
 
-import { IHeader } from '../types';
+import { IHeader } from '../interface';
 
 export interface IHeaderBase extends IHeader {
   translationPath: string;

@@ -17,3 +17,8 @@ export enum TextInAboutTeamEnum {
   Right = 'text right',
   Left = 'text left',
 }
+
+export enum HeaderTypeEnum {
+  Header = 'header',
+  Footer = 'footer',
+}

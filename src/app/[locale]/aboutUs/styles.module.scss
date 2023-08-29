@@ -1,11 +1,10 @@
 @import "styles/variables";
 
 .wrapper {
-  margin: 0 auto;
-  margin-top: $margin-s;
+  margin: $margin-90px auto 0;
   position: relative;
 
   @media (max-width: $tablet) {
-    margin-top: $margin-xs;
+    margin-top: $margin-36px;
   }
 }

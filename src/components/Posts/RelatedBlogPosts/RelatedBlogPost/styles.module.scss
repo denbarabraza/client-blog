@@ -2,25 +2,25 @@
 @import "styles/mixins";
 
 .wrapper {
-  width: $width-xs;
+  width: $width-414px;
 
   @media (max-width: $tablet) {
-    width: $width-xxl;
+    width: $width-100pr;
   }
 }
 
 .image {
-  margin-bottom: $margin-xs;
+  margin-bottom: $margin-36px;
   position: relative;
-  width: $width-xxl;
+  width: $width-100pr;
   aspect-ratio: 4/3;
 }
 
 .info {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-xxxs;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-14px;
   color: $dark-gray-color;
-  font-weight: $fontWeight-xs;
+  font-weight: $fontWeight-500;
 
   a {
     color: $purple-color;
@@ -34,10 +34,10 @@
 }
 
 .title {
-  margin-bottom: $margin-xs;
-  font-size: $fontSize-sm;
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-28px;
   color: $primary-color;
-  font-weight: $fontWeight-m;
+  font-weight: $fontWeight-700;
   line-height: 40px;
   transition: all 0.2s ease-in-out;
 
@@ -46,18 +46,18 @@
   }
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-s;
+    font-size: $fontSize-22px;
     line-height: 28px;
   }
 }
 
 .preview {
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   color: $dark-gray-color;
   line-height: 28px;
 
   @media (max-width: $tablet) {
-    font-size: $fontSize-xxxs;
+    font-size: $fontSize-14px;
     line-height: 22px;
   }
 }

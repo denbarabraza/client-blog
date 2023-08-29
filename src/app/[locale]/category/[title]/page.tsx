@@ -9,7 +9,7 @@ import SearchBlock from '@/components/SearchBlock';
 import categories from '@/constants/data/categories.json';
 import posts from '@/constants/data/posts.json';
 
-import { ICategoryPage } from './types';
+import { ICategoryPage } from './interface';
 
 import styles from './styles.module.scss';
 

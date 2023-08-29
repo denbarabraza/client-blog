@@ -1,7 +1,4 @@
-export enum HeaderTypeEnum {
-  Header = 'header',
-  Footer = 'footer',
-}
+import { HeaderTypeEnum } from '@/constants/enums';
 
 export interface INavMenu {
   type: HeaderTypeEnum;

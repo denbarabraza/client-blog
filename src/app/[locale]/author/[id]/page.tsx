@@ -9,7 +9,7 @@ import Posts from '@/components/Posts/Posts';
 import posts from '@/constants/data/posts.json';
 import { findAuthorById } from '@/utils/findAuthorById';
 
-import { IAuthorPage } from './types';
+import { IAuthorPage } from './interface';
 
 const Author: FC<IAuthorPage> = ({ params: { id } }) => {
   const t = useTranslations();
