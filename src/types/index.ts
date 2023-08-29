@@ -22,3 +22,8 @@ export interface IAuthor {
   instagram: string;
   linkedin: string;
 }
+
+export interface IOffice {
+  gps: number[];
+  popUp: string;
+}

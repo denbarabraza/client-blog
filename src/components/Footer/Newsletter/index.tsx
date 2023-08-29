@@ -36,7 +36,6 @@ const Newsletter = () => {
   } = envEmailJs;
 
   const handleSubscribe: SubmitHandler<INewsLetterFooterInput> = () => {
-    console.log(formRef.current);
     emailjs
       .sendForm(
         NEXT_PUBLIC_EMAILJS_SERVICE_ID,
