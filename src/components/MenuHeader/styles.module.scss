@@ -1,0 +1,32 @@
+@import "styles/variables";
+
+.menu {
+  top: 0;
+  left: 0;
+  width: $width-100pr;
+  height: $height-100pr;
+  position: absolute;
+  background-color: black;
+  z-index: $zIndex-4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $gap-10;
+  color: $white-color;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  overflow: hidden;
+  visibility: hidden;
+
+  &.open {
+    transform: translateX(0);
+    overflow: hidden;
+    visibility: visible;
+  }
+}
+
+.link {
+  width: $width-100pr;
+  height: $height-100pr;
+}

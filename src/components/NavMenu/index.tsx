@@ -34,7 +34,7 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
 
   return (
     <>
-      <nav className={styles.navMenu}>
+      <div className={styles.navMenu}>
         {navigationMenu.map(({ name, path }) => {
           const isActive = checkPathActive(pathName, path);
 
@@ -50,7 +50,7 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
             </div>
           );
         })}
-      </nav>
+      </div>
       {headerType && (
         <>
           <button type='button' className={styles.button} onClick={handleModalOpen}>

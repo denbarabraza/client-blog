@@ -16,10 +16,6 @@
       transform: translateY(-3px);
     }
   }
-
-  @media (max-width: $tablet) {
-    display: none;
-  }
 }
 
 .active {
@@ -48,7 +44,7 @@
   }
 }
 
-.linkItem{
+.linkItem {
   max-width: $width-110px;
 }
 
@@ -57,7 +53,7 @@
   width: $width-150px;
   height: fit-content;
   background-color: $white-color;
-  padding: $padding-10xp $padding-12xp;
+  padding: $padding-10px $padding-12px;
   margin-left: $margin-22px;
   font-size: $fontSize-16px;
   font-weight: $fontWeight-500;

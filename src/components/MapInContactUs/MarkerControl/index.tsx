@@ -12,8 +12,6 @@ export const MarkerControl: FC<IMarkerControl> = memo(
       setSelectedOffice(null);
     };
 
-    console.log(selectedOffice);
-
     return currentOffices?.map(office => (
       <Marker
         key={office.gps[0]}

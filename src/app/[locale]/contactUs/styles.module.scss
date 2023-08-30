@@ -64,14 +64,14 @@
   @include flex-between-start;
   flex-direction: column;
   width: $width-50pr;
-  padding-left: $padding-10xp;
+  padding-left: $padding-10px;
 
 }
 
 .infoBlockTitle {
   text-align: center;
   margin-bottom: $margin-22px;
-  padding-bottom: $padding-10xp;
+  padding-bottom: $padding-10px;
   font-size: $fontSize-22px;
   color: $primary-color;
   width: $width-100pr;
@@ -81,7 +81,7 @@
 
 .infoBlockText {
   width: $width-100pr;
-  padding-bottom: $padding-10xp;
+  padding-bottom: $padding-10px;
   font-size: $fontSize-18px;
   font-weight: $fontWeight-500;
   line-height: 32px;

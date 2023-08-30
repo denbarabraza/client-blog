@@ -22,7 +22,7 @@ const Footer: FC<IFooter> = ({ locale }) => {
         <LayoutWrapper>
           <div className={styles.navbar}>
             <div className={styles.title}>Modsen Client Blog</div>
-            <div className={styles.links}>
+            <div className={styles.menuItem}>
               <NavMenu type={HeaderTypeEnum.Footer} locale={locale} />
             </div>
           </div>

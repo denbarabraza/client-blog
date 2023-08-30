@@ -38,12 +38,12 @@
   }
 }
 
-.links {
+.menuItem {
+  @include flex-between-center();
   width: $width-700px;
 
-  @media (max-width: $laptop) {
-    @include flex-column-center();
-    width: $width-100pr;
+  @media (max-width: $tablet) {
+    display: none;
   }
 }
 

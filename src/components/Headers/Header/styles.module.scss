@@ -11,13 +11,20 @@
 
   @media (max-width: $tablet) {
     height: fit-content;
+    padding: $padding-20px;
   }
 }
 
 .wrapper {
+  @include flex-between-center();
   margin: 0 auto;
   padding: 0 $padding-46px;
   width: $width-100pr;
+
+  @media (max-width: $tablet) {
+    height: fit-content;
+    padding: 0;
+  }
 }
 
 .navbar {
@@ -26,7 +33,6 @@
   gap: $gap-70;
 
   @media (max-width: $tablet) {
-    flex-direction: column;
     gap: 0;
   }
 }
@@ -42,15 +48,23 @@
 
   @media (max-width: $tablet) {
     font-size: $fontSize-22px;
-    margin-top: $margin-36px;
+  }
+  @media (max-width: $mobile) {
+    font-size: $fontSize-18px;
   }
 }
 
-.links {
+.menuItem {
   @include flex-between-center();
   width: $width-700px;
 
   @media (max-width: $tablet) {
-    width: $width-150px;
+    display: none;
+  }
+}
+
+.menuBurger {
+  @media (min-width: $tablet) {
+    display: none;
   }
 }

@@ -3,6 +3,7 @@
 import React, { FC, useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 
+import { MenuHeader } from '@/components/MenuHeader';
 import NavMenu from '@/components/NavMenu';
 import { HeaderTypeEnum } from '@/constants/enums';
 
@@ -25,8 +26,11 @@ const Header: FC<IHeader> = ({ locale }) => {
         <div className={styles.navbar}>
           <div className={styles.title}>Modsen Client Blog</div>
           <HeaderBlockLng locale={locale} translationPath={translationPath} />
-          <div className={styles.links}>
+          <div className={styles.menuItem}>
             <NavMenu type={HeaderTypeEnum.Header} locale={locale} />
+          </div>
+          <div className={styles.menuBurger}>
+            <MenuHeader locale={locale} />
           </div>
         </div>
       </div>
