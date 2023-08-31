@@ -16,7 +16,7 @@ describe('category', () => {
   });
 
   it('correct operation of elastic search', () => {
-    cy.get('input[placeholder*="Search for tag..."]').focus().type('b');
+    cy.get('[data-cy="tagsSearchInput"]').focus().type('b');
     cy.get('li').contains('business').trigger('mouseover').click();
     cy.get('[data-cy="tagsSearchButton"]').click();
     cy.get('[href="/en/category/business"] > [data-cy="categoryItem"]')
