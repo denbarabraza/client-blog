@@ -76,7 +76,7 @@ const Newsletter = () => {
       onSubmit={handleSubmit(handleSubscribe)}
       ref={formRef}
     >
-      <div className={styles.form}>
+      <div className={styles.form} data-cy='formNewsletter'>
         <h3 className={styles.title}>{t('Newsletter.title')}</h3>
         <section className={styles.main}>
           <div className={styles.inputWrapper}>
@@ -88,12 +88,18 @@ const Newsletter = () => {
               placeholder='e@example.com'
               className={styles.input}
             />
-            <p className={styles.errorMessage}>{errors.email?.message}</p>
+            <p className={styles.errorMessage} data-cy='errorMessageInput'>
+              {errors.email?.message}
+            </p>
           </div>
           <button className={styles.button} type='submit'>
             {t('Newsletter.button')}
           </button>
-          {alertText && <div className={styles.alert}>{alertText}</div>}
+          {alertText && (
+            <div className={styles.alert} data-cy='alertNewsletter'>
+              {alertText}
+            </div>
+          )}
         </section>
       </div>
     </form>

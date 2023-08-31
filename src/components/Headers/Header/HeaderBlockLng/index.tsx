@@ -12,7 +12,7 @@ const HeaderBlockLng: FC<IHeaderBase> = ({ locale, translationPath }) => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.switcher}>
+      <div className={styles.switcher} data-cy='switcherItem'>
         <div className={styles.currentLng}>{locale}</div>
         <div>|</div>
         {languages

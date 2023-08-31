@@ -26,7 +26,7 @@ const Header: FC<IHeader> = ({ locale }) => {
         <div className={styles.navbar}>
           <div className={styles.title}>Modsen Client Blog</div>
           <HeaderBlockLng locale={locale} translationPath={translationPath} />
-          <div className={styles.menuItem}>
+          <div className={styles.menuItem} data-cy='menuItem'>
             <NavMenu type={HeaderTypeEnum.Header} locale={locale} />
           </div>
           <div className={styles.menuBurger}>

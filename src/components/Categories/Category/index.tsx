@@ -16,7 +16,7 @@ const Category: FC<ICategory> = ({
 }) => {
   return (
     <Link href={`/${locale}/category/${title.toLocaleLowerCase()}`}>
-      <div className={styles.category}>
+      <div className={styles.category} data-cy='category'>
         <div className={styles.image}>
           <Image src={icon} alt={title} fill style={{ objectFit: 'cover' }} />
         </div>

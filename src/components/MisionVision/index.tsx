@@ -26,7 +26,9 @@ const MissionVision: FC<IMissionVision> = ({ variant }) => {
               <p className={styles.label}>{t('Home.aboutLabel')}</p>
               <p className={styles.title}>{t('Home.aboutTitle')}</p>
               <p className={styles.text}>{t('Home.aboutText')}</p>
-              <Link href='/aboutUs'>{t('Home.aboutButton')}</Link>
+              <Link href='/aboutUs' data-cy='aboutUsLinkHome'>
+                {t('Home.aboutButton')}
+              </Link>
             </>
           )}
         </section>

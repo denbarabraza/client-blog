@@ -34,13 +34,14 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
 
   return (
     <>
-      <div className={styles.navMenu}>
+      <div className={styles.navMenu} data-cy='navMenu'>
         {navigationMenu.map(({ name, path }) => {
           const isActive = checkPathActive(pathName, path);
 
           return (
             <div className={styles.linkItem} key={name}>
               <Link
+                data-cy='link'
                 key={name}
                 href={`/${locale}${path}`}
                 className={isActive ? styles.active : ''}
@@ -53,7 +54,12 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
       </div>
       {headerType && (
         <>
-          <button type='button' className={styles.button} onClick={handleModalOpen}>
+          <button
+            type='button'
+            className={styles.button}
+            onClick={handleModalOpen}
+            data-cy='buttonModal'
+          >
             {t('Home.video')}
           </button>
 

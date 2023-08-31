@@ -23,7 +23,7 @@ export const MenuHeader: FC<IMenuHeader> = ({ locale }) => {
 
   return (
     <div ref={node}>
-      <div className={`${styles.menu} ${open ? styles.open : ''}`}>
+      <div className={`${styles.menu} ${open ? styles.open : ''}`} data-cy='burgerMenu'>
         <div onClick={() => close()}>
           <NavMenu type={HeaderTypeEnum.Header} locale={locale} />
         </div>

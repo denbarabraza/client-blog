@@ -12,7 +12,7 @@ const CategoriesList: FC<ICategoriesList> = ({ categoriesTitle, locale }) => {
   const t = useTranslations();
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-cy='categoryPosts'>
       <h2 className={styles.title}>{t('Category.title')}</h2>
       {categories.map(category => (
         <CategoriesListItem
@@ -20,7 +20,7 @@ const CategoriesList: FC<ICategoriesList> = ({ categoriesTitle, locale }) => {
           isSelected={
             categoriesTitle.toLocaleLowerCase() === category.title.toLocaleLowerCase()
           }
-          key={category.title}
+          key={category.title + category.info}
           category={category}
         />
       ))}

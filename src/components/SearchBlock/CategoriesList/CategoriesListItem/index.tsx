@@ -24,7 +24,10 @@ const CategoriesListItem: FC<ICategoriesListItem> = ({
 
   return (
     <Link href={`/${translationPath}/category/${title.toLocaleLowerCase()}`}>
-      <div className={`${styles.category} ${isSelected && styles.selected}`}>
+      <div
+        className={`${styles.category} ${isSelected && styles.selected}`}
+        data-cy='categoryItem'
+      >
         <div className={styles.image}>
           <Image src={icon} alt={title} fill style={{ objectFit: 'cover' }} />
         </div>

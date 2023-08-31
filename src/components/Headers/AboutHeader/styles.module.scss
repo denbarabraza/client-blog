@@ -78,6 +78,7 @@
   font-size: $fontSize-16px;
   color: $dark-gray-color;
   line-height: 28px;
+  z-index: $zIndex-4000;
 
   @media (max-width: $laptop) {
     text-align: center;

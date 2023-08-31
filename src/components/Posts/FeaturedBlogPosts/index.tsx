@@ -21,9 +21,11 @@ const FeaturedBlogPosts = () => {
       <section className={styles.content}>
         <div className={styles.header}>
           <h3 className={styles.title}>{t('Blog.subtitle')}</h3>
-          <Link href='/blog'>{t('Home.viewAllPosts')}</Link>
+          <Link href='/blog' data-cy='viewAllPost'>
+            {t('Home.viewAllPosts')}
+          </Link>
         </div>
-        <div className={styles.preview}>
+        <div className={styles.preview} data-cy='posts'>
           {posts.slice(0, 4).map(post => (
             <PostPreview key={post.id} post={post} />
           ))}

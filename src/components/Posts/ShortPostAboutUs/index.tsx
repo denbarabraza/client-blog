@@ -14,7 +14,7 @@ const ShortPostAboutUs = () => {
         <h4 className={styles.label}>{t('Home.whyLabel')}</h4>
         <h2 className={styles.title}>{t('Home.whyTitle')}</h2>
         <p className={styles.text}>{t('Home.whyText')}</p>
-        <Link className={styles.button} href='/aboutUs'>
+        <Link className={styles.button} href='/aboutUs' data-cy='aboutUsLinkHomeShort'>
           {t('Home.whyButton')}
         </Link>
       </article>

@@ -54,9 +54,14 @@ const TagsSearch: FC<ITagsSearch> = ({ handleTag }) => {
         placeholder={t('Category.placeholder')}
         value={value}
         onChange={handleChange}
-        data-testid='tagsSearchInput'
+        data-cy='tagsSearchInput'
       />
-      <button type='button' className={styles.button} onClick={handleSearchTag(value)}>
+      <button
+        type='button'
+        data-cy='tagsSearchButton'
+        className={styles.button}
+        onClick={handleSearchTag(value)}
+      >
         {t('Category.button')}
       </button>
 

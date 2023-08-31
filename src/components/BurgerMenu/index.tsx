@@ -13,6 +13,7 @@ export const BurgerMenu: FC<IBurgerMenu> = memo(({ open, handleMenuOpen }) => {
 
   return (
     <button
+      data-cy='burgerMenuButton'
       type='button'
       className={`${styles.burgerMenu} ${open ? styles.open : ''}`}
       onClick={handleOpen}

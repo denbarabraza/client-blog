@@ -78,8 +78,9 @@ const FormContactUs: FC = () => {
       onSubmit={handleSubmit(handleSendMessage)}
       ref={formRef}
     >
-      <div className={styles.inputWrapper}>
+      <div className={styles.inputWrapper} data-cy='contactUsForm'>
         <input
+          data-cy='contactUsFullName'
           type='text'
           {...register('fullName', {
             required: true,
@@ -89,6 +90,7 @@ const FormContactUs: FC = () => {
         />
         <p className={styles.errorMessage}>{errors.fullName?.message}</p>
         <input
+          data-cy='contactUsEmail'
           type='email'
           {...register('email', {
             required: true,
@@ -107,12 +109,13 @@ const FormContactUs: FC = () => {
         </select>
         <p className={styles.errorMessage}>{errors.query?.message}</p>
         <textarea
+          data-cy='contactUsFullMessage'
           className={styles.textarea}
           placeholder={t('ContactUs.placeholder3')}
           {...register('message')}
         />
         <p className={styles.errorMessage}>{errors.message?.message}</p>
-        <button className={styles.button} type='submit'>
+        <button className={styles.button} type='submit' data-cy='contactUsButton'>
           {t('ContactUs.button')}
         </button>
       </div>

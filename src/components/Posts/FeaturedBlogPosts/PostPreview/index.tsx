@@ -17,11 +17,14 @@ const PostPreview: FC<IPostPreview> = ({ post: { createdAt, title, authorId, id 
 
   return (
     <div className={styles.wrapper}>
-      <p className={styles.info}>
-        {t('BlogHeader.author')} <Link href={`/author/${authorId}`}>{name}</Link> |{' '}
-        {createdAt}
+      <p className={styles.info} data-cy='postInfo'>
+        {t('BlogHeader.author')}{' '}
+        <Link href={`/author/${authorId}`} data-cy='authorId'>
+          {name}
+        </Link>{' '}
+        | {createdAt}
       </p>
-      <Link className={styles.title} href={`/blogPost/${id}`}>
+      <Link className={styles.title} href={`/blogPost/${id}`} data-cy='blogPostId'>
         {title}
       </Link>
     </div>

@@ -22,12 +22,13 @@ const SearchBlock: FC<ISearchBlock> = ({
       <TagsSearch handleTag={handleTag} />
       <CategoriesList locale={locale} categoriesTitle={currentCategory} />
       <h3 className={styles.title}>{t('Category.tagsTitle')}</h3>
-      <div className={styles.tagWrapper}>
+      <div className={styles.tagWrapper} data-cy='tagBlock'>
         {tags.map(tag => (
           <div
             className={`${styles.tag} ${tag === currentTag && styles.selected}`}
             onClick={handleTag(tag)}
             key={tag}
+            data-cy='tag'
           >
             {tag}
           </div>
