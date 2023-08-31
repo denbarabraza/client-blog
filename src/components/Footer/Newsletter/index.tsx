@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { envEmailJs } from '@/constants/envEmailJs';
-import { newsLetterFooterSchema } from '@/utils/validation';
+import { newsLetterFooterSchema } from '@/constants/validation';
 import emailjs from '@emailjs/browser';
 import { yupResolver } from '@hookform/resolvers/yup';
 
