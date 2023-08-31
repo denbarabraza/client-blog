@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
@@ -35,6 +37,14 @@
   },
   "devDependencies": {
     "@hookform/resolvers": "^3.3.0",
+    "@storybook/addon-essentials": "7.4.0",
+    "@storybook/addon-interactions": "7.4.0",
+    "@storybook/addon-links": "7.4.0",
+    "@storybook/addon-onboarding": "1.0.8",
+    "@storybook/blocks": "7.4.0",
+    "@storybook/nextjs": "^7.4.0",
+    "@storybook/react": "7.4.0",
+    "@storybook/testing-library": "0.2.0",
     "@types/uuid": "^9.0.2",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
@@ -54,6 +64,7 @@
     "prettier": "3.0.2",
     "react-hook-form": "^7.45.4",
     "sass": "^1.66.1",
-    "sass-loader": "^13.3.2"
+    "sass-loader": "^13.3.2",
+    "storybook": "7.4.0"
   }
 }
