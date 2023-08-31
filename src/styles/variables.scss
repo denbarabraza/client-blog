@@ -133,3 +133,137 @@ $tablet: 768px;
 $laptop: 1024px;
 $bigScreen: 1920px;
 
+:export {
+  $primary-color: $primary-color;
+  $dark-yellow-color: $dark-yellow-color;
+  $yellow-color: $yellow-color;
+  $purple-color: $purple-color;
+  $dark-gray-color: $dark-gray-color;
+  $blue-gray-color: $blue-gray-color;
+  $medium-gray-color: $medium-gray-color;
+  $gray-color: $gray-color;
+  $lavender-color: $lavender-color;
+  $beige-color: $beige-color;
+  $white-color: $white-color;
+  $translusent-color: $translusent-color;
+
+  $width-100pr: $width-100pr;
+  $width-90pr: $width-90pr;
+  $width-70pr: $width-70pr;
+  $width-40pr: $width-40pr;
+  $width-50pr: $width-50pr;
+  $width-10pr: $width-10pr;
+  $width-1280px: $width-1280px;
+  $width-1024px: $width-1024px;
+  $width-780px: $width-780px;
+  $width-770px: $width-770px;
+  $width-700px: $width-700px;
+  $width-580px: $width-580px;
+  $width-515px: $width-515px;
+  $width-470px: $width-470px;
+  $width-414px: $width-414px;
+  $width-300px: $width-300px;
+  $width-250px: $width-250px;
+  $width-200px: $width-200px;
+  $width-180px: $width-180px;
+  $width-150px: $width-150px;
+  $width-130px: $width-130px;
+  $width-110px: $width-110px;
+  $width-70px: $width-70px;
+  $width-64px: $width-64px;
+  $width-55px: $width-55px;
+  $width-50px: $width-50px;
+  $width-40px: $width-40px;
+  $width-30px: $width-30px;
+  $width-25px: $width-25px;
+  $width-20px: $width-20px;
+  $width-4px: $width-4px;
+  $width-50vw: $width-50vw;
+  $width-70vw: $width-70vw;
+  $width-80vw: $width-80vw;
+  $width-90vw: $width-90vw;
+  $width-100vw: $width-100vw;
+
+  $height-4px: $height-4px;
+  $height-25px: $height-25px;
+  $height-30px: $height-30px;
+  $height-50px: $height-50px;
+  $height-56px: $height-56px;
+  $height-64px: $height-64px;
+  $height-70px: $height-70px;
+  $height-76px: $height-76px;
+  $height-130px: $height-130px;
+  $height-144px: $height-144px;
+  $height-256px: $height-256px;
+  $height-300px: $height-300px;
+  $height-440px: $height-440px;
+  $height-10pr: $height-10pr;
+  $height-50pr: $height-50pr;
+  $height-100pr: $height-100pr;
+  $height-30vh: $height-30vh;
+  $height-50vh: $height-50vh;
+  $height-70vh: $height-70vh;
+  $height-90vh: $height-90vh;
+  $height-100vh: $height-100vh;
+
+  $margin-5px: $margin-5px;
+  $margin-10px: $margin-10px;
+  $margin-20px: $margin-20px;
+  $margin-22px: $margin-22px;
+  $margin-36px: $margin-36px;
+  $margin-90px: $margin-90px;
+  $margin-200px: $margin-200px;
+
+  $padding-10px: $padding-10px;
+  $padding-12px: $padding-12px;
+  $padding-16px: $padding-16px;
+  $padding-20px: $padding-20px;
+  $padding-22px: $padding-22px;
+  $padding-30px: $padding-30px;
+  $padding-46px: $padding-46px;
+  $padding-72px: $padding-72px;
+
+  $fontSize-12px: $fontSize-12px;
+  $fontSize-14px: $fontSize-14px;
+  $fontSize-16px: $fontSize-16px;
+  $fontSize-18px: $fontSize-18px;
+  $fontSize-22px: $fontSize-22px;
+  $fontSize-24px: $fontSize-24px;
+  $fontSize-26px: $fontSize-26px;
+  $fontSize-28px: $fontSize-28px;
+  $fontSize-32px: $fontSize-32px;
+  $fontSize-36px: $fontSize-36px;
+  $fontSize-48px: $fontSize-48px;
+  $fontSize-56px: $fontSize-56px;
+
+  $fontWeight-500: $fontWeight-500;
+  $fontWeight-600: $fontWeight-600;
+  $fontWeight-700: $fontWeight-700;
+  $fontWeight-900: $fontWeight-900;
+
+  $opacity-0: $opacity-0;
+  $opacity-06: $opacity-06;
+  $opacity-08: $opacity-08;
+  $opacity-1: $opacity-1;
+
+  $gap-70: $gap-70;
+  $gap-30: $gap-30;
+  $gap-32: $gap-32;
+  $gap-20: $gap-20;
+  $gap-10: $gap-10;
+  $gap-5: $gap-5;
+
+  $zIndex-10: $zIndex-10;
+  $zIndex-1000: $zIndex-1000;
+  $zIndex-2000: $zIndex-2000;
+  $zIndex-3000: $zIndex-3000;
+  $zIndex-3010: $zIndex-3010;
+  $zIndex-3020: $zIndex-3020;
+  $zIndex-4000: $zIndex-4000;
+  $zIndex-5000: $zIndex-5000;
+
+  $mobile: $mobile;
+  $tablet: $tablet;
+  $laptop: $laptop;
+  $bigScreen: $bigScreen;
+}

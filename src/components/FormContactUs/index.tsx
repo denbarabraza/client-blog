@@ -6,7 +6,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 
 import query from '@/constants/data/query.json';
 import { envEmailJs } from '@/constants/envEmailJs';
-import { contactUsSchema } from '@/utils/validation';
+import { contactUsSchema } from '@/constants/validation';
 import emailjs from '@emailjs/browser';
 import { yupResolver } from '@hookform/resolvers/yup';
 
@@ -14,7 +14,7 @@ import { IFormContactUs } from './interface';
 
 import styles from './styles.module.scss';
 
-const Form: FC = () => {
+const FormContactUs: FC = () => {
   const [alertText, setAlertText] = useState<string>('');
 
   const formRef = useRef<HTMLFormElement>(null);
@@ -121,4 +121,4 @@ const Form: FC = () => {
   );
 };
 
-export default Form;
+export default FormContactUs;
