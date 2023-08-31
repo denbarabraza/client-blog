@@ -2,8 +2,8 @@
 
 import React, { Fragment } from 'react';
 import { useTranslations } from 'next-intl';
+import FormContactUs from 'components/FormContactUs';
 
-import Form from '@/components/Form';
 import LayoutWrapper from '@/components/LayoutWrapper';
 import MapInContactUs from '@/components/MapInContactUs';
 import { useCustomInfiniteScroll } from '@/hooks/useCustomInfinityScroll';
@@ -38,7 +38,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <Form />
+        <FormContactUs />
       </div>
     </LayoutWrapper>,
     <MapInContactUs key={1} />,
