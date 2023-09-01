@@ -1,14 +1,15 @@
 'use client';
 
-import React, { FC, Fragment, useMemo } from 'react';
+import React, { FC, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 
 import AuthorHeader from '@/components/Headers/AuthorHeader';
-import LayoutWrapper from '@/components/LayoutWrapper';
 import Posts from '@/components/Posts/Posts';
+import VirtualizedList from '@/components/VirtualizedList';
 import posts from '@/constants/data/posts.json';
-import { useCustomInfiniteScroll } from '@/hooks/useCustomInfinityScroll';
+import { VirtualizedListItem } from '@/types';
 import { findAuthorById } from '@/utils/findAuthorById';
+import { renderVirtualizedList } from '@/utils/renderVirtualizedList';
 
 import { IAuthorPage } from './interface';
 
@@ -25,27 +26,34 @@ const Author: FC<IAuthorPage> = ({ params: { id } }) => {
     [id],
   );
 
-  const componentsAuthor = [
-    <AuthorHeader
-      key={0}
-      name={name}
-      image={image}
-      review={review}
-      linkedin={linkedin}
-      twitter={twitter}
-      facebook={facebook}
-      instagram={instagram}
-    />,
-    <LayoutWrapper key={1}>
-      <Posts posts={postsByAuthor} postsTitle={t('Author.title')} />
-    </LayoutWrapper>,
+  const dataAuthorPage: VirtualizedListItem[] = [
+    {
+      id: 'authorHeader',
+      render: () => (
+        <AuthorHeader
+          name={name}
+          image={image}
+          review={review}
+          linkedin={linkedin}
+          twitter={twitter}
+          facebook={facebook}
+          instagram={instagram}
+        />
+      ),
+    },
+    {
+      id: 'post',
+      render: () => <Posts posts={postsByAuthor} postsTitle={t('Author.title')} />,
+    },
   ];
 
-  const visibleComponents = useCustomInfiniteScroll(componentsAuthor);
-
-  return visibleComponents?.map(component => (
-    <Fragment key={component.toString()}>{component}</Fragment>
-  ));
+  return (
+    <VirtualizedList
+      data={dataAuthorPage}
+      renderItem={renderVirtualizedList}
+      defaultItemHeight={250}
+    />
+  );
 };
 
 export default Author;

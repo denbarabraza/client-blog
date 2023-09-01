@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { LocaleValueEnum } from '@/constants/enums';
 
 export interface ILanguage {
@@ -26,4 +28,20 @@ export interface IAuthor {
 export interface IOffice {
   gps: number[];
   popUp: string;
+}
+
+export type VirtualizedListItem = {
+  id: string;
+  render: () => React.ReactNode;
+};
+
+export interface IComponentsVisible {
+  id: number;
+  component: React.ReactElement;
+}
+
+export interface IGetVisibleRange {
+  offsetTop: number;
+  scrollTop: number;
+  windowSize: number;
 }

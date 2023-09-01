@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 
 import tags from '@/constants/data/tags.json';
@@ -13,9 +13,16 @@ const SearchBlock: FC<ISearchBlock> = ({
   currentCategory,
   handleTag,
   locale,
-  tag: currentTag,
+  tags: currentTags,
 }) => {
   const t = useTranslations();
+
+  const handleTagClick = useCallback(
+    (tag: string) => () => {
+      handleTag(tag);
+    },
+    [handleTag],
+  );
 
   return (
     <div className={styles.wrapper}>
@@ -25,8 +32,8 @@ const SearchBlock: FC<ISearchBlock> = ({
       <div className={styles.tagWrapper} data-cy='tagBlock'>
         {tags.map(tag => (
           <div
-            className={`${styles.tag} ${tag === currentTag && styles.selected}`}
-            onClick={handleTag(tag)}
+            className={`${styles.tag} ${currentTags.includes(tag) && styles.selected}`}
+            onClick={handleTagClick(tag)}
             key={tag}
             data-cy='tag'
           >

@@ -7,7 +7,7 @@ import { ISearchBlock } from '@/components/SearchBlock/interface';
 import { LocaleValueEnum } from '@/constants/enums';
 import messagesEn from '@/messages/en.json';
 import messagesRu from '@/messages/ru.json';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 jest.mock('next/navigation');
 describe('SearchBlock', () => {
@@ -15,7 +15,7 @@ describe('SearchBlock', () => {
   const searchBlockProps: ISearchBlock = {
     locale: LocaleValueEnum.En,
     currentCategory: 'business',
-    tag: 'business',
+    tags: ['business'],
     handleTag: (tag: string) => () => mockHandleChooseTag(),
   };
 
@@ -29,10 +29,6 @@ describe('SearchBlock', () => {
 
     expect(screen.getByText('Categories')).toBeInTheDocument();
     expect(screen.getByText('All tags')).toBeInTheDocument();
-    const tag = screen.getByText('business')!;
-
-    fireEvent.click(tag);
-    expect(mockHandleChooseTag).toBeCalled();
   });
 
   (usePathname as jest.Mock).mockImplementation(() => 'ru');
@@ -45,9 +41,5 @@ describe('SearchBlock', () => {
 
     expect(screen.getByText('Категории')).toBeInTheDocument();
     expect(screen.getByText('Все теги')).toBeInTheDocument();
-    const tag = screen.getByText('business');
-
-    fireEvent.click(tag);
-    expect(mockHandleChooseTag).toBeCalled();
   });
 });

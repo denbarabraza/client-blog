@@ -1,3 +1,3 @@
 export interface ITagsSearch {
-  handleTag: (tag: string) => () => void;
+  handleTag: (tag: string) => void;
 }

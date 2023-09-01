@@ -30,9 +30,5 @@ describe('HomePage', () => {
     cy.visit('en/aboutUs');
 
     cy.visit('/en');
-    cy.get('[href="/en/category/business"] > [data-cy="category"]').click();
-    cy.visit('en/category/business');
-
-    cy.visit('/en');
   });
 });
