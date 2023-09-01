@@ -4,6 +4,15 @@ import 'styles/variables.scss';
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
+    '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        sass: {
+          implementation: require('sass'),
+        },
+      },
+    },
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
