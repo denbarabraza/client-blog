@@ -44,7 +44,7 @@ const TagsSearch: FC<ITagsSearch> = ({ handleTag }) => {
   };
 
   const handleSearchTag = (tag: string) => () => {
-    handleTag(tag)();
+    handleTag(tag);
   };
 
   return (

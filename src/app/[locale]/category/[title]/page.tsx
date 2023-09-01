@@ -14,7 +14,7 @@ import { ICategoryPage } from './interface';
 import styles from './styles.module.scss';
 
 const Category: FC<ICategoryPage> = ({ params: { title, locale } }) => {
-  const [tag, setTag] = useState<string>('');
+  const [tags, setTags] = useState<string[]>([]);
 
   const currentCategory = useMemo(
     () => categories.find(category => category.title.toLocaleLowerCase() === title)!,
@@ -22,20 +22,31 @@ const Category: FC<ICategoryPage> = ({ params: { title, locale } }) => {
   );
 
   const postsByCategory = useMemo(
-    () => posts.filter(({ category }) => category === title),
+    () => posts.filter(post => post.category === title),
     [title],
   );
 
-  const handleTag = useCallback(
-    (tag: string) => () => {
-      setTag(tag);
-    },
-    [tag],
-  );
+  const filteredPosts = useMemo(() => {
+    if (tags.length === 0) {
+      return postsByCategory;
+    }
 
-  const postsByCloudTag = postsByCategory.filter(({ tags }) => tags.includes(tag));
-  const postsByTag = postsByCloudTag.length;
-  const postsByCategoryAndCloudTag = tag && !postsByTag ? [] : postsByCategory;
+    return postsByCategory.filter(
+      post => post.category === title && post.tags.some(tag => tags.includes(tag)),
+    );
+  }, [tags, postsByCategory, title]);
+
+  const handleTag = useCallback((tag: string) => {
+    setTags(prevTags => {
+      const isTagSelected = prevTags.includes(tag);
+
+      if (isTagSelected) {
+        return prevTags.filter(prevTag => prevTag !== tag);
+      }
+
+      return [...prevTags, tag];
+    });
+  }, []);
 
   return (
     <div className={styles.wrapper}>
@@ -43,15 +54,12 @@ const Category: FC<ICategoryPage> = ({ params: { title, locale } }) => {
       <LayoutWrapper key={1}>
         <div className={styles.content}>
           <div className={styles.posts}>
-            <Posts
-              posts={tag && postsByTag ? postsByCloudTag : postsByCategoryAndCloudTag}
-              postsTitle=''
-            />
+            <Posts posts={filteredPosts} postsTitle={currentCategory.title} />
           </div>
           <SearchBlock
             locale={locale}
             currentCategory={currentCategory.title}
-            tag={tag}
+            tags={tags}
             handleTag={handleTag}
           />
         </div>
