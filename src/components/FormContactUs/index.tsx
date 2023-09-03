@@ -2,6 +2,7 @@
 
 import React, { FC, useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { Button } from 'components-client-blog';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import query from '@/constants/data/query.json';
@@ -115,9 +116,12 @@ const FormContactUs: FC = () => {
           {...register('message')}
         />
         <p className={styles.errorMessage}>{errors.message?.message}</p>
-        <button className={styles.button} type='submit' data-cy='contactUsButton'>
-          {t('ContactUs.button')}
-        </button>
+        <Button
+          title={t('ContactUs.button')}
+          isValid
+          type='submit'
+          data-cy='contactUsButton'
+        />
       </div>
       {alertText && <div className={styles.alert}>{alertText}</div>}
     </form>

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { Button } from 'components-client-blog';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { envEmailJs } from '@/constants/envEmailJs';
@@ -92,9 +93,7 @@ const Newsletter = () => {
               {errors.email?.message}
             </p>
           </div>
-          <button className={styles.button} type='submit'>
-            {t('Newsletter.button')}
-          </button>
+          <Button title={t('Newsletter.button')} isValid type='submit' />
           {alertText && (
             <div className={styles.alert} data-cy='alertNewsletter'>
               {alertText}

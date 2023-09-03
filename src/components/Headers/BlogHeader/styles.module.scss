@@ -65,29 +65,6 @@
   color: $medium-gray-color;
 }
 
-.button {
-  width: $width-200px;
-  height: $height-56px;
-  background: $yellow-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: $fontWeight-700;
-  font-size: $fontSize-18px;
-  color: $primary-color;
-  transition: transform 250ms;
-  cursor: pointer;
-
-  &:hover {
-    background-color: $dark-yellow-color;
-    transform: translateX(10px);
-  }
-
-  @media (max-width: $tablet) {
-    margin: 0 auto;
-  }
-}
-
 .image {
   position: relative;
   width: $width-40pr;

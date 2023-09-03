@@ -20,7 +20,11 @@ const Blog: FC<IPage> = ({ params: { locale } }) => {
     { id: 'blogHeader', render: () => <BlogHeader /> },
     {
       id: 'posts',
-      render: () => <Posts posts={posts} postsTitle={t('Blog.subtitle')} />,
+      render: () => (
+        <LayoutWrapper>
+          <Posts posts={posts} postsTitle={t('Blog.subtitle')} />
+        </LayoutWrapper>
+      ),
     },
     {
       id: 'categories',

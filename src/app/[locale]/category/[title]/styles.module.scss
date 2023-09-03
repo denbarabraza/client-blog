@@ -9,7 +9,8 @@
 
 .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 0 auto;
 
   @media (max-width: $tablet) {
@@ -19,7 +20,7 @@
 }
 
 .posts {
-  width: $width-1024px;
+  width: $width-70pr;
 
   @media (max-width: $tablet) {
     width: fit-content;

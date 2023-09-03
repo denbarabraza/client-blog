@@ -1,8 +1,8 @@
 'use client';
 
 import React, { FC, useRef, useState } from 'react';
+import { BurgerMenu } from 'components-client-blog';
 
-import { BurgerMenu } from '@/components/BurgerMenu';
 import { IMenuHeader } from '@/components/MenuHeader/intreface';
 import NavMenu from '@/components/NavMenu';
 import { HeaderTypeEnum } from '@/constants/enums';

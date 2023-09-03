@@ -118,6 +118,7 @@
   line-height: 24px;
   transition: transform 250ms;
   cursor: pointer;
+  border: none;
 
   &:hover {
     background-color: $dark-yellow-color;

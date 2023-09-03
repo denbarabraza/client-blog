@@ -2,6 +2,7 @@
 
 import React, { ChangeEvent, FC, memo, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { Button } from 'components-client-blog';
 
 import tags from '@/constants/data/tags.json';
 
@@ -56,14 +57,13 @@ const TagsSearch: FC<ITagsSearch> = ({ handleTag }) => {
         onChange={handleChange}
         data-cy='tagsSearchInput'
       />
-      <button
+      <Button
+        title={t('Category.button')}
+        isValid
         type='button'
         data-cy='tagsSearchButton'
-        className={styles.button}
-        onClick={handleSearchTag(value)}
-      >
-        {t('Category.button')}
-      </button>
+        callBack={handleSearchTag(value)}
+      />
 
       {value.length > 0 && (
         <ul className={styles.list}>

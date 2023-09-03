@@ -4,6 +4,7 @@ import React, { FC, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { Button } from 'components-client-blog';
 
 import posts from '@/constants/data/posts.json';
 import { findAuthorById } from '@/utils/findAuthorById';
@@ -27,8 +28,8 @@ const BlogHeader: FC = () => {
             {createdAt}
           </p>
           <p className={styles.preview}>{preview}</p>
-          <Link href={`/blogPost/${id}`} className={styles.button}>
-            {t('BlogHeader.button')}
+          <Link href={`/blogPost/${id}`}>
+            <Button title={t('BlogHeader.button')} isValid />
           </Link>
         </article>
         <div className={styles.image}>

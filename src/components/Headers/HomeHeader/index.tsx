@@ -3,6 +3,7 @@
 import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { Button } from 'components-client-blog';
 
 import posts from '@/constants/data/posts.json';
 import { findAuthorById } from '@/utils/findAuthorById';
@@ -35,8 +36,8 @@ const HomeHeader = () => {
           {createdAt}
         </p>
         <p className={styles.preview}>{preview}</p>
-        <Link href={`/blogPost/${id}`} className={styles.button}>
-          {t('Home.aboutButton')}
+        <Link href={`/blogPost/${id}`}>
+          <Button title={t('Home.aboutButton')} isValid />
         </Link>
       </div>
     </div>

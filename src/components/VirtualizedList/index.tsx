@@ -83,8 +83,6 @@ const VirtualizedList = <TItem extends IBaseItem>({
     return () => document.removeEventListener('scroll', listener);
   }, []);
 
-  console.log(elRef);
-
   const renderItem: RenderItem<TItem> = useCallback(
     (item, index, data) => {
       if (index < visibleRange.min || index > visibleRange.max) {

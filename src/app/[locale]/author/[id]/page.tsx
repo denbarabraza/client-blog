@@ -4,6 +4,7 @@ import React, { FC, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 
 import AuthorHeader from '@/components/Headers/AuthorHeader';
+import LayoutWrapper from '@/components/LayoutWrapper';
 import Posts from '@/components/Posts/Posts';
 import VirtualizedList from '@/components/VirtualizedList';
 import posts from '@/constants/data/posts.json';
@@ -43,7 +44,11 @@ const Author: FC<IAuthorPage> = ({ params: { id } }) => {
     },
     {
       id: 'post',
-      render: () => <Posts posts={postsByAuthor} postsTitle={t('Author.title')} />,
+      render: () => (
+        <LayoutWrapper>
+          <Posts posts={postsByAuthor} postsTitle={t('Author.title')} />
+        </LayoutWrapper>
+      ),
     },
   ];
 
