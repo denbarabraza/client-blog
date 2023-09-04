@@ -1,7 +1,52 @@
 @import "styles/variables";
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet');
 
 * {
+
+  @font-face {
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/adventpro/v23/V8mqoQfxVT4Dvddr_yOwrzaFxV7JtdQgFqXdUAQrGp_zgX5sWCpLHSNPTA.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/adventpro/v23/V8mqoQfxVT4Dvddr_yOwrzaFxV7JtdQgFqXdUAQrGp_zgX5sWCpLQyNPTA.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/adventpro/v23/V8mqoQfxVT4Dvddr_yOwrzaFxV7JtdQgFqXdUAQrGp_zgX5sWCpLcSNPTA.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/adventpro/v23/V8mqoQfxVT4Dvddr_yOwrzaFxV7JtdQgFqXdUAQrGp_zgX5sWCpLnSRPTA.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/adventpro/v23/V8mqoQfxVT4Dvddr_yOwrzaFxV7JtdQgFqXdUAQrGp_zgX5sWCpLpCRPTA.ttf) format('truetype');
+  }
+
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
