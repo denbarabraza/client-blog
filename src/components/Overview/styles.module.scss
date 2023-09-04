@@ -1,0 +1,77 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  width: $width-100pr;
+  height: $height-440px;
+  position: relative;
+  background-size: cover;
+  background: url('/assets/images/aboutUsBig.png') no-repeat;
+}
+
+.overview {
+  @include flex-center-center();
+  width: $width-780px;
+  padding: $padding-22px 0 $padding-22px;
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  background-color: $yellow-color;
+
+  @media (max-width: $tablet) {
+    width: fit-content;
+  }
+}
+
+.item {
+  @include flex-center-center();
+  width: $width-100pr;
+  flex-direction: column;
+  color: $primary-color;
+}
+
+.count {
+  font-size: $fontSize-56px;
+  font-weight: $fontWeight-700;
+  line-height: 64px;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-36px;
+    line-height: 48px;
+  }
+}
+
+.text {
+  margin-top: $margin-22px;
+  font-size: $fontSize-16px;
+  line-height: 28px;
+
+  @media (max-width: $tablet) {
+    text-align: center;
+    font-size: $fontSize-12px;
+    line-height: 12px;
+  }
+}
+
+.pattern {
+  width: $width-1024px;
+  position: absolute;
+  display: flex;
+  left: 5%;
+  bottom: 0;
+  height: $height-25px;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.right {
+  width: $width-1024px;
+  background-color: $yellow-color;
+}
+
+.left {
+  width: $width-414px;
+  background-color: $purple-color;
+}

@@ -1,0 +1,48 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  width: $width-100pr;
+  margin: 0 auto;
+  color: $primary-color;
+  border-bottom: 1px solid $gray-color;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.title {
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
+  line-height: 48px;
+  letter-spacing: -2px;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-24px;
+    line-height: 36px;
+  }
+}
+
+.posts {
+  @include flex-between-start();
+  gap: $gap-10;
+  margin-bottom: $margin-36px;
+
+  @media (max-width: $tablet) {
+    @include flex-column-center();
+    margin: 0 auto $margin-90px;
+  }
+}
+
+.message {
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-22px;
+  color: $dark-yellow-color;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-18px;
+  }
+}

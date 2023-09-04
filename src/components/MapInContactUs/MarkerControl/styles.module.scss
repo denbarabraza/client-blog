@@ -1,0 +1,19 @@
+@import "styles/variables";
+
+.locationImg {
+  background: url('/assets/images/location.png') no-repeat;
+  width: $width-30px;
+  height: $height-30px;
+}
+
+.popupBlock {
+  text-align: center;
+  min-width: $width-150px;
+  color: black;
+}
+
+.officeName {
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-600;
+  margin-bottom: $margin-10px;
+}

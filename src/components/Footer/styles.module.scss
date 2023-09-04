@@ -1,0 +1,102 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.footer {
+  width: $width-100pr;
+  min-height: $height-300px;
+  padding: $padding-30px 0 $padding-30px;
+  background-color: $primary-color;
+
+  @media (max-width: $tablet) {
+    padding: $padding-30px;
+  }
+}
+
+.wrapper {
+  @include flex-between-center();
+}
+
+.navbar {
+  @include flex-between-center();
+  width: $width-100pr;
+
+  @media (max-width: $mobile) {
+    justify-content: center;
+  }
+}
+
+.title {
+  font-size: $fontSize-24px;
+  font-weight: $fontWeight-700;
+  color: $white-color;
+  width: $width-50pr;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-18px;
+    line-height: 22px;
+    width: $width-100pr;
+  }
+}
+
+.menuItem {
+  @include flex-between-center();
+  width: $width-700px;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.contacts {
+  @include flex-between-center();
+  width: $width-100pr;
+  color: $white-color;
+
+  p {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: $width-100pr;
+  height: $height-100pr;
+  font-size: $fontSize-16px;
+  line-height: 28px;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-12px;
+    line-height: 16px;
+  }
+}
+
+.icons {
+  @include flex-between-center();
+  width: $width-150px;
+  max-width: $width-150px;
+  cursor: pointer;
+
+  a {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: $margin-36px;
+  }
+}

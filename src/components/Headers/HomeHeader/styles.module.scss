@@ -2,15 +2,15 @@
 @import "styles/mixins";
 
 .wrapper {
-  margin-bottom: $margin-xs;
-  width: $width-xxl;
-  padding: $padding-s 0;
+  margin-bottom: $margin-36px;
+  width: $width-100pr;
+  padding: $padding-46px 0;
   color: $white-color;
 }
 
 .header {
   margin: 0 auto;
-  padding-left: $padding-s;
+  padding-left: $padding-46px;
 
   @media (max-width: $tablet) {
     padding-left: 0;
@@ -20,17 +20,17 @@
 }
 
 .label {
-  margin-bottom: $margin-xxxs;
-  font-size: $fontSize-xxs;
-  font-weight: $fontWeight-xs;
+  margin-bottom: $margin-22px;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-500;
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
 
   a {
-    margin-left: 5px;
+    margin-left: $margin-5px;
     color: $white-color;
-    font-weight: $fontWeight-l;
+    font-weight: $fontWeight-900;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 
@@ -40,18 +40,18 @@
   }
 
   @media (max-width: $tablet) {
-    margin-bottom: $margin-xs;
-    font-size: $fontSize-xxxxs;
+    margin-bottom: $margin-36px;
+    font-size: $fontSize-12px;
     line-height: 14px;
   }
 }
 
 .title {
-  margin-bottom: $margin-xxxs;
+  margin-bottom: $margin-22px;
   display: block;
-  width: $width-ml;
-  font-size: $fontSize-ll;
-  font-weight: $fontWeight-m;
+  width: $width-100pr;
+  font-size: $fontSize-56px;
+  font-weight: $fontWeight-700;
   line-height: 64px;
   letter-spacing: -2px;
   color: $white-color;
@@ -62,32 +62,39 @@
     color: $yellow-color;
   }
 
+  @media (max-width: 975px) {
+    font-size: $fontSize-36px;
+  }
+
+
   @media (max-width: $tablet) {
-    font-size: $fontSize-m;
-    font-weight: $fontWeight-s;
+    font-size: $fontSize-36px;
+    font-weight: $fontWeight-600;
     line-height: 44px;
     width: fit-content;
   }
 }
 
 .preview {
-  margin-bottom: $margin-xxxs;
-  width: $width-l;
-  font-size: $fontSize-xxs;
+  text-align: left;
+  margin-bottom: $margin-22px;
+  width: $width-100pr;
+  font-size: $fontSize-18px;
   line-height: 28px;
 
   @media (max-width: $tablet) {
-    margin-bottom: $margin-xs;
-    font-size: $fontSize-xxxxs;
+    margin-bottom: $margin-36px;
+    margin-left: $margin-36px;
+    font-size: $fontSize-12px;
     line-height: 14px;
     width: fit-content;
   }
 }
 
 .info {
-  margin-bottom: $margin-xxxs;
-  font-size: $fontSize-xxxs;
-  font-weight: $fontWeight-xs;
+  margin-bottom: $margin-22px;
+  font-size: $fontSize-14px;
+  font-weight: $fontWeight-500;
   color: $white-color;
 
   a {
@@ -102,15 +109,16 @@
 
 .button {
   @include flex-center-center();
-  width: 204px;
-  height: 56px;
+  width: $width-200px;
+  height: $height-56px;
   background: $yellow-color;
-  font-size: $fontSize-xs;
-  font-weight: $fontWeight-m;
+  font-size: $fontSize-18px;
+  font-weight: $fontWeight-700;
   color: $primary-color;
   line-height: 24px;
   transition: transform 250ms;
   cursor: pointer;
+  border: none;
 
   &:hover {
     background-color: $dark-yellow-color;

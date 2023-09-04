@@ -17,7 +17,11 @@ export const Modal: FC<IModal> = memo(({ children, onClose, isOpen }) => {
   console.log(isOpen, onClose);
 
   return createPortal(
-    <div className={isOpen ? styles.modal : styles.modalActive} onClick={onClose}>
+    <div
+      className={isOpen ? styles.modal : styles.modalActive}
+      onClick={onClose}
+      data-cy='modal'
+    >
       <div
         className={isOpen ? styles.modalContentActive : styles.modalContent}
         onClick={event => event.stopPropagation()}

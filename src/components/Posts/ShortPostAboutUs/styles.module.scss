@@ -1,0 +1,105 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include blockAnimation();
+  position: relative;
+  width: $width-1280px;
+  margin: $margin-36px auto $margin-36px;
+
+  @media (max-width: 1240px) {
+    margin: $margin-22px auto;
+    width: fit-content;
+    text-align: center;
+  }
+}
+
+.image {
+  position: relative;
+  width: $width-1024px;
+  height: 700px;
+  background: url('/assets/images/aboutUsSmall.png') 0 $width-100pr;
+  background-size: cover;
+
+  @media (max-width: $laptop) {
+    width: 100vw;
+  }
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.content {
+  @include flex-column-center;
+  justify-content: center;
+  position: absolute;
+  width: $width-780px;
+  padding: $padding-30px;
+  top: $height-144px;
+  right: 0;
+  background-color: $white-color;
+  height: calc(100% - $height-144px);
+  color: $primary-color;
+
+
+  @media (max-width: $laptop) {
+    position: static;
+    top: $height-56px;
+    height: calc(100% - $height-56px);
+    width: fit-content;
+  }
+}
+
+.label {
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
+  font-weight: $fontWeight-600;
+  color: $primary-color;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-48px;
+  font-weight: $fontWeight-700;
+  line-height: 64px;
+  letter-spacing: -2px;
+
+  @media (max-width: $laptop) {
+    font-size: $fontSize-22px;
+    line-height: 24px;
+  }
+}
+
+.text {
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
+  line-height: 28px;
+  color: $medium-gray-color;
+  word-break: break-word;
+}
+
+.button {
+  @include flex-center-center();
+  margin-top: $margin-36px;
+  width: 269px;
+  height: $height-56px;
+  background: $yellow-color;
+  font-size: $fontSize-18px;
+  font-weight: $fontWeight-700;
+  line-height: 24px;
+  color: $primary-color;
+  transition: transform 250ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-yellow-color;
+    transform: translateX(10px);
+  }
+
+  @media (max-width: $laptop) {
+    margin: $margin-22px auto;
+  }
+}

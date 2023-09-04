@@ -1,0 +1,28 @@
+@import "styles/variables";
+
+.wrapper {
+  width: fit-content;
+  @media (max-width: $tablet) {
+    justify-content: center;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+.posts {
+  width: $width-70pr;
+
+  @media (max-width: $tablet) {
+    width: fit-content;
+  }
+}

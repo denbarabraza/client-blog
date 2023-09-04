@@ -1,0 +1,70 @@
+@import "styles/variables";
+
+.wrapper {
+  width: $width-100pr;
+  color: $primary-color;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.header {
+  width: $width-100pr;
+  height: $height-256px;
+  background-color: $lavender-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: $fontSize-48px;
+  font-weight: $fontWeight-700;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
+  }
+}
+
+.lastUpdate {
+  margin-top: $margin-22px;
+  font-size: $fontSize-16px;
+  opacity: $opacity-06;
+}
+
+.content {
+  padding: $padding-46px 0 $padding-46px;
+}
+
+.article {
+  max-width: $width-770px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    padding: $padding-46px;
+  }
+}
+
+.articleTitle {
+  margin-bottom: $margin-36px;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-36px;
+}
+
+.articleSubtitle {
+  margin-bottom: $margin-36px;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-28px;
+}
+
+.articleText {
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
+  line-height: 28px;
+  text-align: justify;
+}

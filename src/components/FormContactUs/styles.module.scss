@@ -1,0 +1,132 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  width: $width-100pr;
+  margin: $margin-36px 0 $margin-36px;
+}
+
+.form {
+  @include flex-between-center();
+  margin: 0 auto;
+
+  @media (max-width: $laptop) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  width: $width-50pr;
+  min-width: $width-200px;
+
+  @media (max-width: $tablet) {
+    min-width: $width-150px;
+  }
+}
+
+.input {
+  width: $width-100pr;
+  height: $height-56px;
+  background: transparent;
+  padding: $padding-22px;
+  font-size: $fontSize-16px;
+  border: 1px solid $dark-gray-color;
+  color: $dark-gray-color;
+  border-radius: 10px;
+
+  &::placeholder {
+    color: $dark-gray-color;
+  }
+
+  &:focus {
+    border: 1px solid $yellow-color;
+  }
+}
+
+.textarea {
+  width: $width-100pr;
+  min-height: $height-144px;
+  background: transparent;
+  padding: $padding-22px;
+  font-size: $fontSize-16px;
+  border: 1px solid $dark-gray-color;
+  color: $dark-gray-color;
+  border-radius: 10px;
+
+  resize: none;
+
+  &::placeholder {
+    color: $dark-gray-color;
+  }
+
+  &:focus {
+    border: 1px solid $yellow-color;
+  }
+}
+
+.select {
+  width: $width-100pr;
+  height: $height-56px;
+  background: transparent;
+  padding: $padding-10px;
+  font-size: $fontSize-16px;
+  border: 1px solid $dark-gray-color;
+  color: $dark-gray-color;
+  border-radius: 10px;
+
+  &:focus {
+    border: 1px solid $yellow-color;
+  }
+}
+
+.button {
+  width: $width-100pr;
+  height: $height-56px;
+  background-color: $yellow-color;
+  font-size: $fontSize-18px;
+  font-weight: $fontWeight-700;
+  color: $primary-color;
+  border: none;
+  cursor: pointer;
+  transition: all 0.8s;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $dark-yellow-color;
+    transform: translateY(8px);
+  }
+}
+
+.alert {
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding: $padding-20px;
+  background-color: $dark-yellow-color;
+  color: $beige-color;
+  font-size: $fontSize-16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  z-index: $zIndex-1000;
+}
+
+.errorMessage {
+  margin: $margin-10px 0 $margin-10px;
+  color: $red-color;
+
+  p {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+}

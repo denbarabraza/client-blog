@@ -1,0 +1,46 @@
+@import "styles/variables";
+
+.category {
+  width: $width-300px;
+  border: 1px solid $gray-color;
+  padding: $padding-30px;
+  transition: all 0.8s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $yellow-color;
+  }
+
+  @media (max-width: $tablet) {
+    padding: $padding-20px;
+    text-align: center;
+  }
+}
+
+.image {
+  margin-bottom: $margin-36px;
+  position: relative;
+  width: $width-50px;
+  height: $height-50px;
+  background-color: $beige-color;
+  border-radius: 10px;
+
+  @media (max-width: $tablet) {
+    margin: $margin-22px auto;
+  }
+}
+
+.title {
+  margin-bottom: $margin-36px;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: $primary-color;
+}
+
+.info {
+  font-size: $fontSize-16px;
+  line-height: 28px;
+  color: $medium-gray-color;
+}

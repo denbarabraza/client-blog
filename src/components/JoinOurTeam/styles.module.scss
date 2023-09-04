@@ -1,0 +1,57 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include flex-center-center;
+  flex-direction: column;
+  margin: $margin-36px auto $margin-36px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: $primary-color;
+
+  @media (max-width: $tablet) {
+    width: $width-100pr;
+    font-size: $fontSize-26px;
+    line-height: 32px;
+  }
+}
+
+.text {
+  margin-bottom: $margin-36px;
+  font-size: $fontSize-16px;
+  line-height: 28px;
+  color: $medium-gray-color;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-12px;
+    line-height: 16px;
+  }
+}
+
+.button {
+  margin: 0 auto;
+  width: $width-180px;
+  height: $height-56px;
+  background-color: $yellow-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize-18px;
+  line-height: 24px;
+  color: $primary-color;
+  transition: all 0.8s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-yellow-color;
+    transform: translateY(-10px);
+  }
+}

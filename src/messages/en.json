@@ -48,7 +48,7 @@
     "tagsTitle": "All tags",
     "placeholder": "Search for tag...",
     "button": "Search",
-    "message": "No such tag"
+    "message": "No tags found"
   },
   "AboutUs": {
     "title": "About us",
@@ -73,12 +73,11 @@
   },
   "Newsletter": {
     "title": "Subscribe to our news letter to get latest updates and news",
-    "placeholder": "Enter Your Email",
     "button": "Subscribe"
   },
   "Footer": {
     "info": "Finstreet 118 2561 Fintown",
-    "subscribedAlert": "You've just subscribed to our newsletter!"
+    "subscribedAlert": "You have successfully subscribed to our newsletter!"
   },
   "JoinOurTeam": {
     "title": "Join our team to be a part of our story",
@@ -97,12 +96,12 @@
     "placeholder2": "Your Email",
     "placeholder3": "Message",
     "button": "Send Message",
-    "sentAlert": "You've just sent your message!"
+    "sentAlert": "Thanks! You will be contacted soon!"
   },
   "PrivacyPolicy": {
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem sed risus ultricies tristique nulla aliquet enim. Volutpat blandit aliquam etiam erat velit. Orci eu lobortis elementum nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Neque convallis a cras semper auctor neque vitae tempus quam.",
     "title": "Privacy Policy",
-    "lastUpdate": "Last Updated on 27th January 2022",
+    "lastUpdate": "Last Updated on 28th August 2023",
     "articleTitle": "Lorem ipsum dolor sit amet",
     "articleSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
   }

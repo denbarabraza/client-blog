@@ -1,4 +1,4 @@
-import authors from '@/shared/authors.json';
+import authors from '@/constants/data/authors.json';
 import { IAuthor } from '@/types';
 
 export const findAuthorById = (authorId: number) => {

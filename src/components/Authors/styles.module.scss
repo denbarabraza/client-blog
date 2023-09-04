@@ -1,0 +1,39 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  @include blockAnimation();
+  margin: $margin-36px auto $margin-36px;
+}
+
+.title {
+  margin-bottom: $margin-36px;
+  text-align: center;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
+  line-height: 48px;
+  letter-spacing: -2px;
+
+  @media (max-width: $tablet) {
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
+    line-height: 24px;
+  }
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  column-gap: $gap-32;
+  row-gap: $gap-32;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: $laptop) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

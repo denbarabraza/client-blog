@@ -1,8 +1,12 @@
+import React from 'react';
+
+import { LocaleValueEnum } from '@/constants/enums';
+
 export interface ILanguage {
-  local: { [key: string]: string };
+  locale: LocaleValueEnum;
 }
 
-export interface IPageProps {
+export interface IPage {
   params: ILanguage;
 }
 
@@ -19,4 +23,25 @@ export interface IAuthor {
   twitter: string;
   instagram: string;
   linkedin: string;
+}
+
+export interface IOffice {
+  gps: number[];
+  popUp: string;
+}
+
+export type VirtualizedListItem = {
+  id: string;
+  render: () => React.ReactNode;
+};
+
+export interface IComponentsVisible {
+  id: number;
+  component: React.ReactElement;
+}
+
+export interface IGetVisibleRange {
+  offsetTop: number;
+  scrollTop: number;
+  windowSize: number;
 }

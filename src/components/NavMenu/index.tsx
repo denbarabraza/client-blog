@@ -6,10 +6,11 @@ import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import { Modal } from '@/components/Modal';
+import { HeaderTypeEnum } from '@/constants/enums';
 import { footerNavMenu, headerNavMenu } from '@/constants/navMenu';
 import { checkPathActive } from '@/utils/checkPathActive';
 
-import { HeaderTypeEnum, INavMenu } from './types';
+import { INavMenu } from './interface';
 
 import styles from './styles.module.scss';
 
@@ -33,24 +34,32 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
 
   return (
     <>
-      <nav className={styles.navMenu}>
+      <div className={styles.navMenu} data-cy='navMenu'>
         {navigationMenu.map(({ name, path }) => {
           const isActive = checkPathActive(pathName, path);
 
           return (
-            <Link
-              key={name}
-              href={`/${locale}${path}`}
-              className={isActive ? styles.active : ''}
-            >
-              {t(name)}
-            </Link>
+            <div className={styles.linkItem} key={name}>
+              <Link
+                data-cy='link'
+                key={name}
+                href={`/${locale}${path}`}
+                className={isActive ? styles.active : ''}
+              >
+                {t(name)}
+              </Link>
+            </div>
           );
         })}
-      </nav>
+      </div>
       {headerType && (
         <>
-          <button type='button' className={styles.button} onClick={handleModalOpen}>
+          <button
+            type='button'
+            className={styles.button}
+            onClick={handleModalOpen}
+            data-cy='buttonModal'
+          >
             {t('Home.video')}
           </button>
 
@@ -63,7 +72,7 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
                 allowFullScreen
                 title='video'
                 className={styles.video}
-                src='https://www.youtube.com/embed/__-vp0g_BhA'
+                src='https://www.youtube.com/embed/lQQiwf9z5gQ'
               />
             </Modal>
           )}

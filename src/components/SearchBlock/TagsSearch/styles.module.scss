@@ -1,0 +1,81 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  margin-bottom: $margin-36px;
+  position: relative;
+  display: flex;
+  width: $width-250px;
+  height: fit-content;
+
+  @media (max-width: $tablet) {
+    width: fit-content;
+  }
+}
+
+.input {
+  width: $width-100pr;
+  padding: $padding-16px;
+  border: 1px solid $medium-gray-color;
+  border-radius: 5px;
+  border-right: none;
+  font-size: $fontSize-18px;
+  color: $primary-color;
+
+  &::placeholder {
+    color: $primary-color;
+  }
+
+  &:focus {
+    border: 1px solid $yellow-color;
+    border-right: none;
+  }
+}
+
+.button {
+  width: $width-70px;
+  background-color: $yellow-color;
+  font-size: $fontSize-16px;
+  color: $primary-color;
+  font-weight: $fontWeight-700;
+  line-height: 24px;
+  border-radius: 6px;
+  border: none;
+  transition: transform 250ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-yellow-color;
+    transform: scale(1.1);
+  }
+}
+
+.list {
+  width: $width-250px;
+  max-height: $height-144px;
+  position: absolute;
+  top: 60px;
+  background-color: $white-color;
+  overflow: scroll;
+  border: 1px solid $dark-yellow-color;
+  border-radius: 5px;
+
+  z-index: $zIndex-1000;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.item {
+  width: $width-100pr;
+  padding: $padding-10px;
+  font-size: $fontSize-18px;
+  color: $primary-color;
+  cursor: pointer;
+  transition: all 0.8s;
+
+  &:hover {
+    color: $dark-yellow-color;
+  }
+}

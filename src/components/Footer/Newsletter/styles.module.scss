@@ -1,0 +1,124 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapper {
+  width: $width-100pr;
+  background-color: $blue-gray-color;
+  margin: $margin-36px 0 $margin-36px;
+  padding: $padding-30px 0 $padding-30px;
+}
+
+.form {
+  @include flex-between-center();
+  margin: 0 auto;
+  padding: $padding-46px;
+
+  @media (max-width: $laptop) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (max-width: $mobile) {
+    width: $width-100pr;
+  }
+}
+
+.title {
+  width: $width-470px;
+  padding-left: $padding-22px;
+  font-size: $fontSize-36px;
+  font-weight: $fontWeight-700;
+  color: $white-color;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
+  }
+
+  @media (max-width: $laptop) {
+    margin: $margin-36px 0 $margin-36px;
+    width: fit-content;
+    font-size: $fontSize-22px;
+    font-weight: $fontWeight-600;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media (max-width: $mobile) {
+    width: $width-100pr;
+    flex-direction: column;
+    height: $height-200px;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  width: $width-325px;
+  min-width: $width-200px;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    width: $width-200px;
+    max-width: $width-100pr;
+  }
+
+  @media (max-width: $mobile) {
+    width: fit-content;
+  }
+}
+
+.input {
+  width: $width-100pr;
+  height: $height-60px;
+  background: transparent;
+  padding: 0 $padding-10px;
+  font-size: $fontSize-16px;
+  border: 1px solid $white-color;
+  color: $white-color;
+
+  &::placeholder {
+    color: $white-color;
+    opacity: $opacity-08;
+  }
+
+  &:focus {
+    border: 1px solid $yellow-color;
+  }
+}
+
+
+.alert {
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding: $padding-20px;
+  background-color: $dark-yellow-color;
+  color: $beige-color;
+  font-size: $fontSize-16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  z-index: $zIndex-1000;
+}
+
+.errorMessage {
+  color: $red-color;
+
+  p {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+}

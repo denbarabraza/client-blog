@@ -2,16 +2,12 @@
 @import "styles/mixins";
 
 .wrapper {
-  width: $width-xss;
-
-  @media (max-width: $tablet) {
-    margin: $margin-xs auto $margin-xs;
-  }
+  width: $width-110px;
 }
 
 .switcher {
   @include flex-between-center();
-  font-size: $fontSize-xxs;
+  font-size: $fontSize-16px;
   text-transform: uppercase;
 }
 
