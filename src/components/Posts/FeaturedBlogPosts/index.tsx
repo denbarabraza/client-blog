@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 
 import LayoutWrapper from '@/components/LayoutWrapper';
 import posts from '@/constants/data/posts.json';
+import { PATH } from '@/constants/path';
 
 import FeaturedBlogPost from './FeaturedBlogPost';
 import PostPreview from './PostPreview';
@@ -23,7 +24,7 @@ const FeaturedBlogPosts = () => {
         <div className={styles.content}>
           <div className={styles.header}>
             <h3 className={styles.title}>{t('Blog.subtitle')}</h3>
-            <Link href='/blog' data-cy='viewAllPost'>
+            <Link href={PATH.BLOG} data-cy='viewAllPost'>
               {t('Home.viewAllPosts')}
             </Link>
           </div>

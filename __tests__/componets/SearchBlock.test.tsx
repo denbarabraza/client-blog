@@ -1,10 +1,10 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
+import { LocaleValueEnum } from 'constants/enum';
 
 import SearchBlock from '@/components/SearchBlock';
 import { ISearchBlock } from '@/components/SearchBlock/interface';
-import { LocaleValueEnum } from '@/constants/enums';
 import messagesEn from '@/messages/en.json';
 import messagesRu from '@/messages/ru.json';
 import { render, screen } from '@testing-library/react';

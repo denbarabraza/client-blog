@@ -1,4 +1,4 @@
-import { AuthorsInPageEnum } from '@/constants/enums';
+import { AuthorsInPageEnum } from 'constants/enum';
 
 export interface IAuthors {
   variant: AuthorsInPageEnum;

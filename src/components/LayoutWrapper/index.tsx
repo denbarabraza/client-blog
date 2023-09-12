@@ -1,4 +1,4 @@
-import React, { FC, forwardRef } from 'react';
+import React, { FC } from 'react';
 
 import { ILayoutWrapper } from './interface';
 

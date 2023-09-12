@@ -1,6 +1,10 @@
 import React from 'react';
+import { LocaleValueEnum } from 'constants/enum';
 
-import { LocaleValueEnum } from '@/constants/enums';
+export interface IComponentsVisible {
+  id: number;
+  component: React.ReactElement;
+}
 
 export interface ILanguage {
   locale: LocaleValueEnum;
@@ -34,11 +38,6 @@ export type VirtualizedListItem = {
   id: string;
   render: () => React.ReactNode;
 };
-
-export interface IComponentsVisible {
-  id: number;
-  component: React.ReactElement;
-}
 
 export interface IGetVisibleRange {
   offsetTop: number;

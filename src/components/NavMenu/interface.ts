@@ -1,4 +1,4 @@
-import { HeaderTypeEnum } from '@/constants/enums';
+import { HeaderTypeEnum } from 'constants/enum';
 
 export interface INavMenu {
   type: HeaderTypeEnum;

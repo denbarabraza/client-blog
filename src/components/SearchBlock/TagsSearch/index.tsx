@@ -2,7 +2,7 @@
 
 import React, { ChangeEvent, FC, memo, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Button } from 'components-client-blog';
+import { Button, Input } from 'components-client-blog';
 
 import tags from '@/constants/data/tags.json';
 
@@ -10,7 +10,7 @@ import { ITagsSearch } from './interface';
 
 import styles from './styles.module.scss';
 
-const TagsSearch: FC<ITagsSearch> = ({ handleTag }) => {
+const TagsSearch: FC<ITagsSearch> = memo(({ handleTag }) => {
   const [searchTags, setSearchTags] = useState<string[]>([]);
   const [value, setValue] = useState('');
 
@@ -50,8 +50,9 @@ const TagsSearch: FC<ITagsSearch> = ({ handleTag }) => {
 
   return (
     <form className={styles.wrapper}>
-      <input
-        className={styles.input}
+      <Input
+        borderColor='#0000007F'
+        focusColor='#fbd050'
         placeholder={t('Category.placeholder')}
         value={value}
         onChange={handleChange}
@@ -80,6 +81,6 @@ const TagsSearch: FC<ITagsSearch> = ({ handleTag }) => {
       )}
     </form>
   );
-};
+});
 
-export default memo(TagsSearch);
+export default TagsSearch;

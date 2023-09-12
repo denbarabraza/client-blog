@@ -1,7 +1,7 @@
-import { LocaleValueEnum } from '@/constants/enums';
+import { LocaleValueEnum, TitleAlignEnum } from 'constants/enum';
 
 export interface ICategories {
   categoriesTitle: string;
-  titleAlign: 'left' | 'center';
+  titleAlign: TitleAlignEnum;
   locale: LocaleValueEnum;
 }

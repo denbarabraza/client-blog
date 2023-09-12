@@ -1,13 +1,13 @@
 'use client';
 
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import Link from 'next/link';
 
 import { IHeaderBase } from './interface';
 
 import styles from './styles.module.scss';
 
-const HeaderBlockLng: FC<IHeaderBase> = ({ locale, translationPath }) => {
+const HeaderBlockLng: FC<IHeaderBase> = memo(({ locale, translationPath }) => {
   const languages = ['en', 'ru'];
 
   return (
@@ -27,6 +27,6 @@ const HeaderBlockLng: FC<IHeaderBase> = ({ locale, translationPath }) => {
       </div>
     </div>
   );
-};
+});
 
 export default HeaderBlockLng;

@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { Button } from 'components-client-blog';
 
 import posts from '@/constants/data/posts.json';
+import { PATH } from '@/constants/path';
 import { findAuthorById } from '@/utils/findAuthorById';
 
 import styles from './styles.module.scss';
@@ -14,6 +15,7 @@ import styles from './styles.module.scss';
 const { title, authorId, createdAt, id, image, preview } = posts[2];
 
 const FeaturedBlogPost = () => {
+  const { AUTHOR, BLOGPOST } = PATH;
   const t = useTranslations();
 
   const { name } = useMemo(() => findAuthorById(Number(id)), [id]);
@@ -24,12 +26,12 @@ const FeaturedBlogPost = () => {
         <Image src={image} alt={title} fill style={{ objectFit: 'cover' }} />
       </div>
       <p className={styles.info}>
-        {t('BlogHeader.author')} <Link href={`/author/${authorId}`}>{name}</Link> |{' '}
+        {t('BlogHeader.author')} <Link href={`${AUTHOR}/${authorId}`}>{name}</Link> |{' '}
         {createdAt}
       </p>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.preview}>{preview}</p>
-      <Link href={`/blogPost/${id}`}>
+      <Link href={`${BLOGPOST}/${id}`}>
         <Button title={t('BlogHeader.button')} data-cy='featuredPost-button' isValid />
       </Link>
     </div>

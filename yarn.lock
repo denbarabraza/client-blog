@@ -2991,10 +2991,10 @@ common-tags@^1.8.0:
   resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.2.tgz#94ebb3c076d26032745fd54face7f688ef5ac9c6"
   integrity sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==
 
-components-client-blog@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/components-client-blog/-/components-client-blog-1.0.0.tgz#7c53f08db1661694e4d04df471928b104261f2db"
-  integrity sha512-siQnv7UCgDuiUxr6ZC5Q5AxpDuUhKTuR3dWpy+CMTbnFdSmVB7q0KqOt71cs5JZpmZwibR1geOZpSct84M2AZQ==
+components-client-blog@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/components-client-blog/-/components-client-blog-1.0.3.tgz#676355443d1ef2024b63b2686b738851eeb5c8da"
+  integrity sha512-k1HLD5OkrLsXokn9URAR/dS++W2m1Gzb1+QZFTeKAy9ONLq+hEZjfvYIY2YyPmrkAakt2gJ+lsp3GgrA1xuOog==
   dependencies:
     tslib "^2.6.0"
 

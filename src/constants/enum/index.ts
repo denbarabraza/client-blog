@@ -22,3 +22,12 @@ export enum HeaderTypeEnum {
   Header = 'header',
   Footer = 'footer',
 }
+
+export enum StatusCodeEnum {
+  Ok = 'OK',
+}
+
+export enum TitleAlignEnum {
+  Center = 'center',
+  Left = 'left',
+}

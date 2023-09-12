@@ -1,15 +1,16 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { MissionVisionTypeEnum } from 'constants/enum';
 
 import LayoutWrapper from '@/components/LayoutWrapper';
-import { MissionVisionTypeEnum } from '@/constants/enums';
+import { PATH } from '@/constants/path';
 
 import { IMissionVision } from './interface';
 
 import styles from './styles.module.scss';
 
-const MissionVision: FC<IMissionVision> = ({ variant }) => {
+const MissionVision: FC<IMissionVision> = memo(({ variant }) => {
   const t = useTranslations();
 
   return (
@@ -28,7 +29,7 @@ const MissionVision: FC<IMissionVision> = ({ variant }) => {
                 <p className={styles.label}>{t('Home.aboutLabel')}</p>
                 <p className={styles.title}>{t('Home.aboutTitle')}</p>
                 <p className={styles.text}>{t('Home.aboutText')}</p>
-                <Link href='/aboutUs' data-cy='aboutUsLinkHome'>
+                <Link href={PATH.ABOUTUS} data-cy='aboutUsLinkHome'>
                   {t('Home.aboutButton')}
                 </Link>
               </>
@@ -59,6 +60,6 @@ const MissionVision: FC<IMissionVision> = ({ variant }) => {
       </div>
     </LayoutWrapper>
   );
-};
+});
 
 export default MissionVision;

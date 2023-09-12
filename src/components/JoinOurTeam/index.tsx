@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Button } from 'components-client-blog';
 
 import LayoutWrapper from '@/components/LayoutWrapper';
+import { PATH } from '@/constants/path';
 
 import styles from './styles.module.scss';
 
@@ -15,7 +16,7 @@ const JoinOurTeam = () => {
       <div className={styles.wrapper}>
         <h6 className={styles.title}>{t('JoinOurTeam.title')}</h6>
         <p className={styles.text}>{t('JoinOurTeam.text')}</p>
-        <Link href='/contactUs'>
+        <Link href={PATH.CONTACTUS}>
           <Button title={t('JoinOurTeam.button')} isValid data-cy='joinOurTeam.button' />
         </Link>
       </div>

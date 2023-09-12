@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
+import { LocaleValueEnum } from 'constants/enum';
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Headers/Header';
-import { LocaleValueEnum } from '@/constants/enums';
 
 import './globals.scss';
 

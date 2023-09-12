@@ -1,9 +1,9 @@
 import { usePathname } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
+import { HeaderTypeEnum, LocaleValueEnum } from 'constants/enum';
 
 import NavMenu from '@/components/NavMenu';
 import { footerNavMenu, headerNavMenu } from '@/constants';
-import { HeaderTypeEnum, LocaleValueEnum } from '@/constants/enums';
 import messagesEn from '@/messages/en.json';
 import messagesRus from '@/messages/ru.json';
 import { render, screen } from '@testing-library/react';

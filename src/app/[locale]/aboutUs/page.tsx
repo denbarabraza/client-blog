@@ -2,6 +2,11 @@
 
 import React from 'react';
 import { useTranslations } from 'next-intl';
+import {
+  AuthorsInPageEnum,
+  MissionVisionTypeEnum,
+  TextInAboutTeamEnum,
+} from 'constants/enum';
 
 import AboutTeam from '@/components/AboutTeam';
 import Authors from '@/components/Authors';
@@ -11,11 +16,6 @@ import JoinOurTeam from '@/components/JoinOurTeam';
 import LayoutWrapper from '@/components/LayoutWrapper';
 import MisionVision from '@/components/MisionVision';
 import Overview from '@/components/Overview';
-import {
-  AuthorsInPageEnum,
-  MissionVisionTypeEnum,
-  TextInAboutTeamEnum,
-} from '@/constants/enums';
 import { IComponentsVisible } from '@/types';
 
 import styles from './styles.module.scss';

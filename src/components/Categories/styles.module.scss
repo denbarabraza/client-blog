@@ -19,6 +19,14 @@
   }
 }
 
+.title.center {
+  text-align: center;
+}
+
+.title.left {
+  text-align: left;
+}
+
 .content {
   @include flex-center-center;
   gap: $gap-20;

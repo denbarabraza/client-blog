@@ -1,21 +1,24 @@
 'use client';
 
-import React, { FC, useMemo } from 'react';
+import React, { FC, memo, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import categories from '@/constants/data/categories.json';
+import { PATH } from '@/constants/path';
 import { findAuthorById } from '@/utils/findAuthorById';
 
 import { IBlogPostItem } from './interfaces';
 
 import styles from './styles.module.scss';
 
-const BlogPostItem: FC<IBlogPostItem> = props => {
+const BlogPostItem: FC<IBlogPostItem> = memo(props => {
   const {
     blogPost: { category, authorId, createdAt, image, text, title: blogPostTitle },
   } = props;
+
+  const { AUTHOR, CATEGORY } = PATH;
 
   const t = useTranslations();
 
@@ -43,7 +46,7 @@ const BlogPostItem: FC<IBlogPostItem> = props => {
               />
             </div>
             <div className={styles.info}>
-              <Link className={styles.name} href={`/author/${authorId}`}>
+              <Link className={styles.name} href={`${AUTHOR}/${authorId}`}>
                 {currentAuthorName}
               </Link>
               <p className={styles.createdAt}>
@@ -54,7 +57,7 @@ const BlogPostItem: FC<IBlogPostItem> = props => {
                 <div className={styles.icon}>
                   <Image src={icon} alt={category} fill style={{ objectFit: 'cover' }} />
                 </div>
-                <Link className={styles.categoryTitle} href={`/category/${category}`}>
+                <Link className={styles.categoryTitle} href={`${CATEGORY}/${category}`}>
                   {categoryTitle}
                 </Link>
               </div>
@@ -69,6 +72,6 @@ const BlogPostItem: FC<IBlogPostItem> = props => {
       <article className={styles.text} dangerouslySetInnerHTML={{ __html: text }} />
     </div>
   );
-};
+});
 
 export default BlogPostItem;

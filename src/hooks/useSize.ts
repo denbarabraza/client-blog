@@ -20,9 +20,6 @@ export const useSize = <T extends HTMLElement>(
 
   useEffect(() => {
     if (!elementRef.current) {
-      // eslint-disable-next-line no-console
-      console.error('The element is not provided');
-
       return;
     }
 

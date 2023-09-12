@@ -14,8 +14,6 @@ export const Modal: FC<IModal> = memo(({ children, onClose, isOpen }) => {
     };
   }, [isOpen]);
 
-  console.log(isOpen, onClose);
-
   return createPortal(
     <div
       className={isOpen ? styles.modal : styles.modalActive}

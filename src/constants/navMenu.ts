@@ -1,19 +1,21 @@
+import { PATH } from '@/constants/path';
+
 export const headerNavMenu = [
   {
     name: 'Home.title',
-    path: '/',
+    path: PATH.HOME,
   },
   {
     name: 'Blog.title',
-    path: '/blog',
+    path: PATH.BLOG,
   },
   {
     name: 'AboutUs.title',
-    path: '/aboutUs',
+    path: PATH.ABOUTUS,
   },
   {
     name: 'ContactUs.title',
-    path: '/contactUs',
+    path: PATH.CONTACTUS,
   },
 ];
 
@@ -21,6 +23,6 @@ export const footerNavMenu = [
   ...headerNavMenu,
   {
     name: 'PrivacyPolicy.title',
-    path: '/privacyPolicy',
+    path: PATH.PRIVACYPOLICY,
   },
 ];

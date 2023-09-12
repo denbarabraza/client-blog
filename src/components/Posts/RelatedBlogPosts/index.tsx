@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import { useTranslations } from 'next-intl';
 
 import posts from '@/constants/data/posts.json';
@@ -8,7 +8,7 @@ import { IRelatedBlogPosts } from './types';
 
 import styles from './styles.module.scss';
 
-const RelatedBlogPosts: FC<IRelatedBlogPosts> = ({ blogPostId, category }) => {
+const RelatedBlogPosts: FC<IRelatedBlogPosts> = memo(({ blogPostId, category }) => {
   const relatedBlogPosts = posts
     .filter(blogPost => blogPost.id !== blogPostId && blogPost.category === category)
     .slice(0, 3);
@@ -29,6 +29,6 @@ const RelatedBlogPosts: FC<IRelatedBlogPosts> = ({ blogPostId, category }) => {
       )}
     </div>
   );
-};
+});
 
 export default RelatedBlogPosts;

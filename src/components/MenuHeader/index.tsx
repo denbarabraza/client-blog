@@ -2,10 +2,10 @@
 
 import React, { FC, useRef, useState } from 'react';
 import { BurgerMenu } from 'components-client-blog';
+import { HeaderTypeEnum } from 'constants/enum';
 
 import { IMenuHeader } from '@/components/MenuHeader/intreface';
 import NavMenu from '@/components/NavMenu';
-import { HeaderTypeEnum } from '@/constants/enums';
 import { useOnClickOutside } from '@/hooks/useOnClickOutside';
 
 import styles from './styles.module.scss';

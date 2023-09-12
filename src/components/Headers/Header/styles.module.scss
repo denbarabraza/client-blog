@@ -7,7 +7,7 @@
   width: $width-100pr;
   background-color: $primary-color;
   color: $white-color;
-  z-index: $zIndex-3000;
+  z-index: $zIndex-6000;
 
   @media (max-width: $tablet) {
     height: fit-content;
@@ -41,6 +41,10 @@
   font-size: $fontSize-22px;
   font-weight: $fontWeight-700;
   color: $white-color;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @media (max-width: 780px) {
     font-size: $fontSize-18px;

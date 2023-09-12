@@ -1,19 +1,20 @@
+import { LocaleValueEnum, TitleAlignEnum } from 'constants/enum';
+
 import Categories from '@/components/Categories';
 import { ICategories } from '@/components/Categories/interface';
-import { LocaleValueEnum } from '@/constants/enums';
 import { render, screen } from '@testing-library/react';
 
 import '@testing-library/jest-dom';
 
 const categoriesEn: ICategories = {
   categoriesTitle: 'Choose A Category',
-  titleAlign: 'center',
+  titleAlign: TitleAlignEnum.Center,
   locale: LocaleValueEnum.En,
 };
 
 const categoriesRus: ICategories = {
   categoriesTitle: 'Выберите категорию',
-  titleAlign: 'left',
+  titleAlign: TitleAlignEnum.Left,
   locale: LocaleValueEnum.Ru,
 };
 

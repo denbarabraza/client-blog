@@ -1,4 +1,4 @@
-import { contactUsSchema, newsLetterFooterSchema } from '@/constants/validation';
+import { contactUsSchema, newsLetterFooterSchema } from '@/shemas';
 
 describe('Schema Tests', () => {
   it('should pass validation for a valid email in newsLetterFooterSchema', async () => {

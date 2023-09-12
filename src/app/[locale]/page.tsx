@@ -3,6 +3,7 @@
 import React, { FC } from 'react';
 import { useTranslations } from 'next-intl';
 import Partners from 'components/Partners';
+import { AuthorsInPageEnum, MissionVisionTypeEnum, TitleAlignEnum } from 'constants/enum';
 
 import Authors from '@/components/Authors';
 import Categories from '@/components/Categories';
@@ -13,7 +14,6 @@ import FeaturedBlogPosts from '@/components/Posts/FeaturedBlogPosts';
 import ShortPostAboutUs from '@/components/Posts/ShortPostAboutUs';
 import Testimonials from '@/components/Testimonials';
 import VirtualizedList from '@/components/VirtualizedList';
-import { AuthorsInPageEnum, MissionVisionTypeEnum } from '@/constants/enums';
 import { IPage, VirtualizedListItem } from '@/types';
 import { renderVirtualizedList } from '@/utils/renderVirtualizedList';
 
@@ -48,7 +48,7 @@ const Home: FC<IPage> = ({ params: { locale } }) => {
         <Categories
           locale={locale}
           categoriesTitle={t('Home.categoriesTitle')}
-          titleAlign='center'
+          titleAlign={TitleAlignEnum.Center}
         />
       ),
     },

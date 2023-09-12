@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import { useTranslations } from 'next-intl';
 
 import categories from '@/constants/data/categories.json';
@@ -8,7 +8,7 @@ import { ICategoriesList } from './interface';
 
 import styles from './styles.module.scss';
 
-const CategoriesList: FC<ICategoriesList> = ({ categoriesTitle, locale }) => {
+const CategoriesList: FC<ICategoriesList> = memo(({ categoriesTitle, locale }) => {
   const t = useTranslations();
 
   return (
@@ -26,6 +26,6 @@ const CategoriesList: FC<ICategoriesList> = ({ categoriesTitle, locale }) => {
       ))}
     </div>
   );
-};
+});
 
 export default CategoriesList;

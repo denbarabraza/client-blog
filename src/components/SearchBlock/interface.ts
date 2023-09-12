@@ -1,4 +1,4 @@
-import { LocaleValueEnum } from '@/constants/enums';
+import { LocaleValueEnum } from 'constants/enum';
 
 export interface ISearchBlock {
   currentCategory: string;

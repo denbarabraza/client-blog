@@ -1,19 +1,19 @@
 'use client';
 
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import { useTranslations } from 'next-intl';
+import { HeaderTypeEnum } from 'constants/enum';
 
 import { IFooter } from '@/components/Footer/interface';
 import LayoutWrapper from '@/components/LayoutWrapper';
 import NavMenu from '@/components/NavMenu';
 import { socials } from '@/constants';
-import { HeaderTypeEnum } from '@/constants/enums';
 
 import Newsletter from './Newsletter';
 
 import styles from './styles.module.scss';
 
-const Footer: FC<IFooter> = ({ locale }) => {
+const Footer: FC<IFooter> = memo(({ locale }) => {
   const t = useTranslations();
 
   return (
@@ -43,6 +43,6 @@ const Footer: FC<IFooter> = ({ locale }) => {
       </div>
     </footer>
   );
-};
+});
 
 export default Footer;

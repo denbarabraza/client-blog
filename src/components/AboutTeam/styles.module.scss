@@ -13,6 +13,15 @@
   }
 }
 
+
+.wrapper.row {
+  flex-direction: row;
+}
+
+.wrapper.rowReverse {
+  flex-direction: row-reverse;
+}
+
 .image {
   width: $width-580px;
   position: relative;

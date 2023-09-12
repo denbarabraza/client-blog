@@ -10,6 +10,7 @@ import LayoutWrapper from '@/components/LayoutWrapper';
 import Posts from '@/components/Posts/Posts';
 import VirtualizedList from '@/components/VirtualizedList';
 import posts from '@/constants/data/posts.json';
+import { TitleAlignEnum } from '@/constants/enum';
 import { IPage, VirtualizedListItem } from '@/types';
 import { renderVirtualizedList } from '@/utils/renderVirtualizedList';
 
@@ -32,7 +33,7 @@ const Blog: FC<IPage> = ({ params: { locale } }) => {
         <Categories
           locale={locale}
           categoriesTitle={t('Blog.categoriesTitle')}
-          titleAlign='left'
+          titleAlign={TitleAlignEnum.Left}
         />
       ),
     },

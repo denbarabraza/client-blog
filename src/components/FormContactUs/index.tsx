@@ -6,8 +6,9 @@ import { Button } from 'components-client-blog';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import query from '@/constants/data/query.json';
+import { StatusCodeEnum } from '@/constants/enum';
 import { envEmailJs } from '@/constants/envEmailJs';
-import { contactUsSchema } from '@/constants/validation';
+import { contactUsSchema } from '@/shemas';
 import emailjs from '@emailjs/browser';
 import { yupResolver } from '@hookform/resolvers/yup';
 
@@ -48,7 +49,7 @@ const FormContactUs: FC = () => {
       )
       .then(
         result => {
-          if (result.text === 'OK') {
+          if (result.text === StatusCodeEnum.Ok) {
             setAlertText(t('ContactUs.sentAlert'));
             timerId = setTimeout(() => {
               setAlertText('');

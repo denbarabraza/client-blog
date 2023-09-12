@@ -1,6 +1,6 @@
 'use client';
 
-import React, { FC, useRef, useState } from 'react';
+import React, { FC, memo, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 import PostItem from './PostItem';
@@ -8,7 +8,7 @@ import { IPosts } from './types';
 
 import styles from './styles.module.scss';
 
-const Posts: FC<IPosts> = ({ postsTitle, posts }) => {
+const Posts: FC<IPosts> = memo(({ postsTitle, posts }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const ref = useRef<HTMLInputElement>(null);
 
@@ -74,6 +74,6 @@ const Posts: FC<IPosts> = ({ postsTitle, posts }) => {
       )}
     </div>
   );
-};
+});
 
 export default Posts;

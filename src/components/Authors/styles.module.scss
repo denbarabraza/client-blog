@@ -4,6 +4,7 @@
 .wrapper {
   @include blockAnimation();
   margin: $margin-36px auto $margin-36px;
+  width: $width-100pr;
 }
 
 .title {

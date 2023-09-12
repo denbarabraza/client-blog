@@ -1,4 +1,4 @@
-import { TextInAboutTeamEnum } from '@/constants/enums';
+import { TextInAboutTeamEnum } from 'constants/enum';
 
 export interface IAboutTeam {
   variant: TextInAboutTeamEnum;

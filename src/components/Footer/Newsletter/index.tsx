@@ -5,8 +5,9 @@ import { useTranslations } from 'next-intl';
 import { Button } from 'components-client-blog';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
+import { StatusCodeEnum } from '@/constants/enum';
 import { envEmailJs } from '@/constants/envEmailJs';
-import { newsLetterFooterSchema } from '@/constants/validation';
+import { newsLetterFooterSchema } from '@/shemas';
 import emailjs from '@emailjs/browser';
 import { yupResolver } from '@hookform/resolvers/yup';
 
@@ -46,7 +47,7 @@ const Newsletter = () => {
       )
       .then(
         result => {
-          if (result.text === 'OK') {
+          if (result.text === StatusCodeEnum.Ok) {
             setAlertText(t('Footer.subscribedAlert'));
             timerId = setTimeout(() => {
               setAlertText('');

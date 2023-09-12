@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { Button } from 'components-client-blog';
 
 import posts from '@/constants/data/posts.json';
+import { PATH } from '@/constants/path';
 import { findAuthorById } from '@/utils/findAuthorById';
 
 import styles from './styles.module.scss';
@@ -24,11 +25,11 @@ const BlogHeader: FC = () => {
           <p className={styles.label}>{t('BlogHeader.label')}</p>
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.info}>
-            {t('BlogHeader.author')} <Link href={`/author/${authorId}`}>{name}</Link> |{' '}
-            {createdAt}
+            {t('BlogHeader.author')}{' '}
+            <Link href={`${PATH.AUTHOR}/${authorId}`}>{name}</Link> | {createdAt}
           </p>
           <p className={styles.preview}>{preview}</p>
-          <Link href={`/blogPost/${id}`}>
+          <Link href={`${PATH.BLOGPOST}/${id}`}>
             <Button title={t('BlogHeader.button')} isValid />
           </Link>
         </article>

@@ -1,12 +1,12 @@
 'use client';
 
-import React, { FC, RefObject, useRef, useState } from 'react';
+import React, { FC, memo, RefObject, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import { HeaderTypeEnum } from 'constants/enum';
 
 import { Modal } from '@/components/Modal';
-import { HeaderTypeEnum } from '@/constants/enums';
 import { footerNavMenu, headerNavMenu } from '@/constants/navMenu';
 import { checkPathActive } from '@/utils/checkPathActive';
 
@@ -14,7 +14,7 @@ import { INavMenu } from './interface';
 
 import styles from './styles.module.scss';
 
-const NavMenu: FC<INavMenu> = ({ type, locale }) => {
+const NavMenu: FC<INavMenu> = memo(({ type, locale }) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const t = useTranslations();
   const ref = useRef<HTMLDivElement>(null);
@@ -80,6 +80,6 @@ const NavMenu: FC<INavMenu> = ({ type, locale }) => {
       )}
     </>
   );
-};
+});
 
 export default NavMenu;
